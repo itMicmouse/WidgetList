@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:background="@drawable/shape"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <org.micmource.widgetlists.widgetlist.tag.BGAFlowLayout
+        android:id="@+id/flowlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:fl_isDistributionWhiteSpacing="true"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/et_main_tag"
+            android:layout_width="99dp"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+    </org.micmource.widgetlists.widgetlist.tag.BGAFlowLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape"
+    android:padding="2dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:textSize="22dp"
+        android:id="@+id/tv_defaultinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="头痛" />
+
+    <ImageView
+        android:id="@+id/iv_deleteitem"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cfzw_sc" />
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="600dp"
+        android:layout_height="900dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_margin="10dp"
+                android:id="@+id/rv_draglist_view"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"></android.support.v7.widget.RecyclerView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="代为完成的个人任务代为完成的个人任务
+提问需要满足：其他人可能遇到相似问题，或代为完成的个人任务
+提问需要满足：其他人可能遇到相似问题，或代为完成的个人任务
+提问需要满足：其他人可能遇到相似问题，或代为完成的个人任务
+提问需要满足：其他人可能遇到相似问题，或代为完成的个人任务
+提问需要满足：其他人可能遇到相似问题，或代为完成的个人任务
+提问需要满足：其他人可能遇到相似问题，或代为完成的个人任务
+提问需要满足：其他人可能遇到相似问题，或代为完成的个人任务
+提问需要满足：其他人可能遇到相似问题，或代为完成的个人任务
+提问需要满足：其他人可能遇到相似问题，或代为完成的个人任务
+提问需要满足：其他人可能遇到相似问题，或
+提问需要满足：其他人可能遇到相似问题，或问题的解决方法对其他人有所助益。如果通过其他方式解决遇到困难，欢迎提问并说明你的求知过程。"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

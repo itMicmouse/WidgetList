@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WidgetList</string>
+
+
+    <array name="main_items">
+        <item>List - Basic Drag and Swipe</item>
+        <item>Grid - Basic Swipe</item>
+        <item>封装DialogFragment</item>
+        <item>recycler list study</item>
+        <item>recycler grid study</item>
+        <item>recycler RecyclerStaggeredGridFragment study</item>
+        <item>Tag 标签</item>
+    </array>
+
+    <array name="dummy_items">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+
+    </array>
+</resources>
