@@ -1,4 +1,4 @@
-package com.example.retrofitnorestful;
+package com.example.retrofitnorestful.net.domain;
 
 /**
  * Created by yakun on 2016/5/12.

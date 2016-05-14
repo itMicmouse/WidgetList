@@ -1,7 +1,8 @@
 package com.example.retrofitnorestful;
 
-import android.widget.Toast;
-
+import com.example.retrofitnorestful.net.UserService;
+import com.example.retrofitnorestful.net.domain.User;
+import com.example.retrofitnorestful.utils.RetrofitUtils;
 import com.google.gson.Gson;
 
 import org.json.JSONObject;
@@ -9,11 +10,6 @@ import org.junit.Test;
 
 import java.util.UUID;
 
-import static org.junit.Assert.*;
-
-/**
- * To work on unit tests, switch the Test Artifact in the Build Variants view.
- */
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() throws Exception {

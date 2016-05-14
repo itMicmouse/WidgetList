@@ -1,4 +1,4 @@
-package com.example.retrofitnorestful;
+package com.example.retrofitnorestful.utils;
 
 
 import com.squareup.okhttp.OkHttpClient;

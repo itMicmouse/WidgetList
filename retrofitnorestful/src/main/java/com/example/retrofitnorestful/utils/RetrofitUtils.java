@@ -1,4 +1,4 @@
-package com.example.retrofitnorestful;
+package com.example.retrofitnorestful.utils;
 
 import retrofit.GsonConverterFactory;
 import retrofit.Retrofit;
@@ -29,7 +29,7 @@ public class RetrofitUtils {
         if (singletonRx == null) {
             synchronized (RetrofitUtils.class) {
                 singletonRx = new Retrofit.Builder().
-                        baseUrl("http://192.168.16.92:8080")
+                        baseUrl("http://192.168.16.202:8080")
                         .client(OkHttpUtils.getInstance())
                         .addConverterFactory(GsonConverterFactory.create())
                         .addCallAdapterFactory(RxJavaCallAdapterFactory.create())

@@ -1,4 +1,4 @@
-package retrofit2.converter.gson;
+package retrofit2.converter.gson.main.impl;
 
 import com.google.gson.Gson;
 import com.google.gson.TypeAdapter;
@@ -16,10 +16,12 @@ import retrofit.Converter;
 public class CustomResponseConverter<T> implements Converter<ResponseBody, T> {
     private final Gson gson;
     private final TypeAdapter<T> adapter;
+    private final String name;
 
-    public CustomResponseConverter(Gson gson, TypeAdapter<T> adapter) {
+    public CustomResponseConverter(Gson gson, TypeAdapter<T> adapter,String name) {
         this.gson = gson;
         this.adapter = adapter;
+        this.name = name;
     }
 
     @Override
@@ -33,8 +35,8 @@ public class CustomResponseConverter<T> implements Converter<ResponseBody, T> {
             String msg = json.optString("msg", "");
 
             if (ret == 0) {
-                if (json.has("data")) {
-                    Object data = json.get("data");
+                if (json.has(name)) {
+                    Object data = json.get(name);
 
                     body = data.toString();
 

@@ -1,1 +1,1 @@
-include ':app', ':retrofitnorestful'
+include ':app', ':retrofitnorestful', ':lib_test'

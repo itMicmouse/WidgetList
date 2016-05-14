@@ -2,18 +2,14 @@ package com.example.retrofitnorestful;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
-import com.squareup.okhttp.OkHttpClient;
-
-import org.json.JSONException;
-import org.json.JSONObject;
+import com.example.retrofitnorestful.net.UserService;
+import com.example.retrofitnorestful.net.domain.User;
+import com.example.retrofitnorestful.utils.RetrofitUtils;
 
 import java.io.IOException;
-
-import retrofit.GsonConverterFactory;
-import retrofit.Retrofit;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,14 +20,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void click(View view) throws IOException {
-
-        String body = "{\"ret\": 0,\"msg\": \"123\",\"data\": {\"uid\": \"1\",\"name\": \"kkmike999\"}}";
-        JSONObject json = null;
-        try {
-            json = new JSONObject(body);
-            Toast.makeText(MainActivity.this, json.getInt("ret"), Toast.LENGTH_SHORT).show();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+        new Thread(){
+            @Override
+            public void run() {
+                UserService api = RetrofitUtils.createApi(UserService.class);
+                User name1 = null;
+                try {
+                    name1 = api.loadUser("name").execute().body();
+                    System.out.println(name1.getName());
+                    Log.e("MainActivity.class",name1.getName());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }.start();
     }
 }

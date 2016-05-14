@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/WidgetList.iml" filepath="$PROJECT_DIR$/WidgetList.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_test/lib_test.iml" filepath="$PROJECT_DIR$/lib_test/lib_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/retrofitnorestful/retrofitnorestful.iml" filepath="$PROJECT_DIR$/retrofitnorestful/retrofitnorestful.iml" />
     </modules>
   </component>
