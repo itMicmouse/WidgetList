@@ -10,7 +10,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/lib_test" />
+            <option value="$PROJECT_DIR$/lib_fragmentdialog" />
+            <option value="$PROJECT_DIR$/lib_recycleview" />
             <option value="$PROJECT_DIR$/retrofitnorestful" />
           </set>
         </option>
@@ -18,7 +19,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/lib_test" />
+            <option value="$PROJECT_DIR$/lib_fragmentdialog" />
+            <option value="$PROJECT_DIR$/lib_recycleview" />
             <option value="$PROJECT_DIR$/retrofitnorestful" />
           </set>
         </option>

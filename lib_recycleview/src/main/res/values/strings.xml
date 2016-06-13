@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">lib_recycleview</string>
+    <array name="dummy_items">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+    </array>
+</resources>

@@ -3,19 +3,12 @@
 
 
     <array name="main_items">
-        <item>List - Basic Drag and Swipe</item>
-        <item>Grid - Basic Swipe</item>
+        <item>recycleView_listView 可拖拽</item>
+        <item>recycleView_Grid 可拖拽</item>
         <item>封装DialogFragment</item>
-        <item>recycler list study</item>
-        <item>recycler grid study</item>
+        <item>recycler list</item>
+        <item>recycler grid</item>
         <item>recycler RecyclerStaggeredGridFragment study</item>
         <item>Tag 标签</item>
-    </array>
-
-    <array name="dummy_items">
-        <item>One</item>
-        <item>Two</item>
-        <item>Three</item>
-
     </array>
 </resources>

@@ -1,1 +1,1 @@
-include ':app', ':retrofitnorestful', ':lib_test'
+include ':app', ':retrofitnorestful', ':lib_recycleview', ':lib_fragmentdialog'
