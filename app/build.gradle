@@ -30,4 +30,5 @@ dependencies {
     compile project(':lib_recycleview')
     compile 'com.android.support:recyclerview-v7:23.1.1'
     compile project(path: ':lib_fragmentdialog')
+    compile project(':livebutton')
 }

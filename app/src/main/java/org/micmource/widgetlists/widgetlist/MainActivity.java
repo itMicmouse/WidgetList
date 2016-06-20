@@ -12,6 +12,8 @@ import com.lib_recycleview.drag.list.RecyclerListFragmentDrag;
 import com.lib_recycleview.view.grid.RecyclerGridFragment;
 import com.lib_recycleview.view.listview.RecyclerListFragment;
 import com.lib_recycleview.view.staggeredgrid.RecyclerStaggeredGridFragment;
+import com.livebutton.LiveButtonFragment;
+
 import org.micmource.widgetlists.widgetlist.tag.DoorActivity;
 
 /**
@@ -61,6 +63,8 @@ public class MainActivity extends ActionBarActivity implements MainFragment.OnLi
             case 6:
                 intent = new Intent(MainActivity.this, DoorActivity.class);
                 startActivity(intent);
+            case 7:
+                fragment = new LiveButtonFragment();
                 return;
         }
         getSupportFragmentManager().beginTransaction()
