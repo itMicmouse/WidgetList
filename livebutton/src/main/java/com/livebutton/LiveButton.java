@@ -84,7 +84,7 @@ public class LiveButton extends Button {
 		}
 		canvas.restore();
 	}
-
+	
 	@TargetApi(Build.VERSION_CODES.JELLY_BEAN)
 	@SuppressWarnings("deprecation")
 	private void initBackground() {
@@ -149,6 +149,8 @@ public class LiveButton extends Button {
 		this.shadowColor = shadowColor;
 		initBackground();
 	}
+
+
 
 	public float getCorners() {
 		return corners;

@@ -3,10 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/WidgetList.iml" filepath="$PROJECT_DIR$/WidgetList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androidjs/androidjs.iml" filepath="$PROJECT_DIR$/androidjs/androidjs.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_fragmentdialog/lib_fragmentdialog.iml" filepath="$PROJECT_DIR$/lib_fragmentdialog/lib_fragmentdialog.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_recycleview/lib_recycleview.iml" filepath="$PROJECT_DIR$/lib_recycleview/lib_recycleview.iml" />
       <module fileurl="file://$PROJECT_DIR$/livebutton/livebutton.iml" filepath="$PROJECT_DIR$/livebutton/livebutton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notificationsdemo/notificationsdemo.iml" filepath="$PROJECT_DIR$/notificationsdemo/notificationsdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/retrofitnorestful/retrofitnorestful.iml" filepath="$PROJECT_DIR$/retrofitnorestful/retrofitnorestful.iml" />
     </modules>
   </component>

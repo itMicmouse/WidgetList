@@ -9,20 +9,24 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/androidjs" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/lib_fragmentdialog" />
             <option value="$PROJECT_DIR$/lib_recycleview" />
             <option value="$PROJECT_DIR$/livebutton" />
+            <option value="$PROJECT_DIR$/notificationsdemo" />
             <option value="$PROJECT_DIR$/retrofitnorestful" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/androidjs" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/lib_fragmentdialog" />
             <option value="$PROJECT_DIR$/lib_recycleview" />
             <option value="$PROJECT_DIR$/livebutton" />
+            <option value="$PROJECT_DIR$/notificationsdemo" />
             <option value="$PROJECT_DIR$/retrofitnorestful" />
           </set>
         </option>

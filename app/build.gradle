@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "org.micmource.appdemo"
-        minSdkVersion 14
+        minSdkVersion 16
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -31,4 +31,5 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:23.1.1'
     compile project(path: ':lib_fragmentdialog')
     compile project(':livebutton')
+    compile project(':notificationsdemo')
 }
