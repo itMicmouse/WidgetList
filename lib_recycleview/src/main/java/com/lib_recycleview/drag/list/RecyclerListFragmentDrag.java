@@ -17,6 +17,7 @@
 package com.lib_recycleview.drag.list;
 
 import android.app.Fragment;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.RecyclerView;
@@ -45,13 +46,14 @@ public class RecyclerListFragmentDrag extends Fragment implements OnStartDragLis
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View inflate = inflater.inflate(R.layout.listfragment,null);
+        inflate.setBackgroundColor(Color.WHITE);
         return inflate;
     }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
+        view.setBackgroundColor(Color.WHITE);
         RecyclerListAdapter adapter = new RecyclerListAdapter(getActivity(), this);
 
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.rv_draglist_view);

@@ -16,6 +16,7 @@
 package com.lib_recycleview.view.listview;
 
 import android.app.Fragment;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
@@ -53,10 +54,11 @@ public class RecyclerListFragment extends Fragment {
         RecyclerListAdapter adapter = new RecyclerListAdapter(getActivity(),strings);
 
         RecyclerView recyclerView = (RecyclerView) view;
+        recyclerView.setBackgroundColor(Color.WHITE);
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false));
-        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(getContext(), DividerItemDecoration.HORIZONTAL_LIST);
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(getActivity(), DividerItemDecoration.HORIZONTAL_LIST);
         recyclerView.addItemDecoration(dividerItemDecoration);
     }
 }

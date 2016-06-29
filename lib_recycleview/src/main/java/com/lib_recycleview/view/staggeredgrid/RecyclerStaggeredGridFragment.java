@@ -1,6 +1,7 @@
 package com.lib_recycleview.view.staggeredgrid;
 
 import android.app.Fragment;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.RecyclerView;
@@ -38,6 +39,7 @@ public class RecyclerStaggeredGridFragment extends Fragment {
         RecyclerListAdapter adapter = new RecyclerListAdapter(getActivity(),strings);
 
         RecyclerView recyclerView = (RecyclerView) view;
+        recyclerView.setBackgroundColor(Color.WHITE);
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new StaggeredGridLayoutManager(4,  StaggeredGridLayoutManager.HORIZONTAL));

@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 
-import com.example.notificationsdemo.NotificationListFragment;
 import com.lib_fragmentdialog.FriendActivity;
 import com.lib_recycleview.drag.grid.RecyclerGridFragmentDrag;
 import com.lib_recycleview.drag.list.RecyclerListFragmentDrag;
@@ -68,9 +67,7 @@ public class MainActivity extends ActionBarActivity implements MainFragment.OnLi
             case 7:
                 fragment = new LiveButtonFragment();
                 break;
-            case 8:
-                fragment = new NotificationListFragment();
-                break;
+
         }
         getFragmentManager().beginTransaction()
                 .replace(R.id.content, fragment)

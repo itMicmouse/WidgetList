@@ -1,1 +1,1 @@
-include ':app', ':retrofitnorestful', ':lib_recycleview', ':lib_fragmentdialog', ':livebutton', ':androidjs', ':notificationsdemo'
+include ':app', ':retrofitnorestful', ':lib_recycleview', ':lib_fragmentdialog', ':livebutton', ':androidjs'

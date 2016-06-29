@@ -17,7 +17,9 @@
 package com.lib_recycleview.drag.grid;
 
 import android.app.Fragment;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.support.annotation.ColorInt;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -54,6 +56,7 @@ public class RecyclerGridFragmentDrag extends Fragment implements OnStartDragLis
         final RecyclerListAdapter adapter = new RecyclerListAdapter(getActivity(),this);
 
         RecyclerView recyclerView = (RecyclerView) view;
+        recyclerView.setBackgroundColor(Color.WHITE);
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(adapter);
 

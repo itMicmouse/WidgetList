@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">NotificationsDemo</string>
-    <array name="notifilist">
-        <item>简单Notification</item>
-    </array>
-</resources>

@@ -1,14 +1,15 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+    compileSdkVersion globalConfiguration.getAt("androidCompileSdkVersion")
+    buildToolsVersion globalConfiguration.getAt("androidBuildToolsVersion")
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion globalConfiguration.getAt("androidMinSdkVersion")
+        targetSdkVersion globalConfiguration.getAt("androidTargetSdkVersion")
+        versionCode globalConfiguration.getAt("androidVersionCode")
+        versionName globalConfiguration.getAt("androidVersionName")
     }
     buildTypes {
         release {
@@ -19,8 +20,15 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.4.0'
-    provided 'com.android.support:recyclerview-v7:23.1.1'
+    def recycleviewDependencies = rootProject.ext.recycleviewDependencies
+    def recycleviewTestDependencies = rootProject.ext.recycleviewTestDependencies
+    def developmentDependencies = rootProject.ext.developmentDependencies
+
+    compile recycleviewDependencies.recyclerView
+
+    androidTestCompile recycleviewTestDependencies.junit
+
+    //Development
+    compile developmentDependencies.leakCanary
+
 }

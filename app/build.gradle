@@ -2,15 +2,18 @@ apply plugin: 'com.android.application'
 apply from: '../config/quality/quality.gradle'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+    compileSdkVersion globalConfiguration.getAt("androidCompileSdkVersion")
+    buildToolsVersion globalConfiguration.getAt("androidBuildToolsVersion")
 
     defaultConfig {
-        applicationId "org.micmource.appdemo"
-        minSdkVersion 16
-        targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        applicationId globalConfiguration.getAt("androidApplicationId")
+        minSdkVersion globalConfiguration.getAt("androidMinSdkVersion")
+        targetSdkVersion globalConfiguration.getAt("androidTargetSdkVersion")
+        versionCode globalConfiguration.getAt("androidVersionCode")
+        versionName globalConfiguration.getAt("androidVersionName")
+        testInstrumentationRunner globalConfiguration.getAt("testInstrumentationRunner")
+        testApplicationId globalConfiguration.getAt("testApplicationId")
     }
     buildTypes {
         release {
@@ -21,15 +24,19 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.1.1'
-    //android Rxjava的支持
-    compile 'io.reactivex:rxandroid:1.1.0'
-    compile 'io.reactivex:rxjava:1.1.0'
+    def appDependencies = rootProject.ext.appDependencies
+    def appTestDependencies = rootProject.ext.appTestDependencies
+    def developmentDependencies = rootProject.ext.developmentDependencies
+
+    compile appDependencies.recyclerView
+    compile appDependencies.rxJava
+    compile appDependencies.rxAndroid
+
+    androidTestCompile appTestDependencies.junit
+    //Development
+    compile developmentDependencies.leakCanary
+
     compile project(':lib_recycleview')
-    compile 'com.android.support:recyclerview-v7:23.1.1'
     compile project(path: ':lib_fragmentdialog')
     compile project(':livebutton')
-    compile project(':notificationsdemo')
 }
