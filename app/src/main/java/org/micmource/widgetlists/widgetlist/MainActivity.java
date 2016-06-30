@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.lib_fragmentdialog.FriendActivity;
 import com.lib_recycleview.drag.grid.RecyclerGridFragmentDrag;
 import com.lib_recycleview.drag.list.RecyclerListFragmentDrag;
+import com.lib_recycleview.view.MineFragment;
 import com.lib_recycleview.view.flowlayout.RecyclerFlowFragment;
 import com.lib_recycleview.view.grid.RecyclerGridFragment;
 import com.lib_recycleview.view.listview.RecyclerListFragment;
@@ -74,6 +75,9 @@ public class MainActivity extends ActionBarActivity implements MainFragment.OnLi
                 break;
             case 8:
                 fragment = new RecyclerFlowFragment();
+                break;
+            case 9:
+                fragment = new MineFragment();
                 break;
 
         }

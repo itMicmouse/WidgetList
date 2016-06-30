@@ -12,5 +12,6 @@
         <item>Tag 标签</item>
         <item>特殊button</item>
         <item>recycleView 的流式布局</item>
+        <item>自定义recycleView LayoutManage</item>
     </array>
 </resources>
