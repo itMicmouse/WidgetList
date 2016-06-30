@@ -11,6 +11,6 @@
         <item>recycler RecyclerStaggeredGridFragment study</item>
         <item>Tag 标签</item>
         <item>特殊button</item>
-        <item>Notification 学习</item>
+        <item>recycleView 的流式布局</item>
     </array>
 </resources>

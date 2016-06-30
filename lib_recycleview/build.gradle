@@ -24,7 +24,7 @@ dependencies {
     def recycleviewTestDependencies = rootProject.ext.recycleviewTestDependencies
     def developmentDependencies = rootProject.ext.developmentDependencies
 
-    compile recycleviewDependencies.recyclerView
+    provided recycleviewDependencies.recyclerView
 
     androidTestCompile recycleviewTestDependencies.junit
 

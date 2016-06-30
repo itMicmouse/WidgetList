@@ -1,14 +1,19 @@
 package org.micmource.widgetlists.widgetlist;
 
 import android.app.Fragment;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
+import android.telephony.TelephonyManager;
+import android.widget.Toast;
 
 import com.lib_fragmentdialog.FriendActivity;
 import com.lib_recycleview.drag.grid.RecyclerGridFragmentDrag;
 import com.lib_recycleview.drag.list.RecyclerListFragmentDrag;
+import com.lib_recycleview.view.flowlayout.RecyclerFlowFragment;
 import com.lib_recycleview.view.grid.RecyclerGridFragment;
 import com.lib_recycleview.view.listview.RecyclerListFragment;
 import com.lib_recycleview.view.staggeredgrid.RecyclerStaggeredGridFragment;
@@ -66,6 +71,9 @@ public class MainActivity extends ActionBarActivity implements MainFragment.OnLi
                 return;
             case 7:
                 fragment = new LiveButtonFragment();
+                break;
+            case 8:
+                fragment = new RecyclerFlowFragment();
                 break;
 
         }
