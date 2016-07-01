@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/lib_fragmentdialog/lib_fragmentdialog.iml" filepath="$PROJECT_DIR$/lib_fragmentdialog/lib_fragmentdialog.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_recycleview/lib_recycleview.iml" filepath="$PROJECT_DIR$/lib_recycleview/lib_recycleview.iml" />
       <module fileurl="file://$PROJECT_DIR$/livebutton/livebutton.iml" filepath="$PROJECT_DIR$/livebutton/livebutton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/realmreserve/realmreserve.iml" filepath="$PROJECT_DIR$/realmreserve/realmreserve.iml" />
       <module fileurl="file://$PROJECT_DIR$/retrofitnorestful/retrofitnorestful.iml" filepath="$PROJECT_DIR$/retrofitnorestful/retrofitnorestful.iml" />
     </modules>
   </component>

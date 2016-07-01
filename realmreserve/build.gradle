@@ -1,0 +1,35 @@
+apply plugin: 'com.android.library'
+apply plugin: 'realm-android'
+
+android {
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+    compileSdkVersion globalConfiguration.getAt("androidCompileSdkVersion")
+    buildToolsVersion globalConfiguration.getAt("androidBuildToolsVersion")
+
+    defaultConfig {
+        minSdkVersion globalConfiguration.getAt("androidMinSdkVersion")
+        targetSdkVersion globalConfiguration.getAt("androidTargetSdkVersion")
+        versionCode globalConfiguration.getAt("androidVersionCode")
+        versionName globalConfiguration.getAt("androidVersionName")
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    def realmreserveDependencies = rootProject.ext.realmreserveDependencies
+    def realmreserveTestDependencies = rootProject.ext.realmreserveTestDependencies
+    def developmentDependencies = rootProject.ext.developmentDependencies
+
+    compile realmreserveDependencies.annotations
+
+    androidTestCompile realmreserveTestDependencies.junit
+
+    //Development
+    compile developmentDependencies.leakCanary
+
+}
