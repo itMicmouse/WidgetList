@@ -20,6 +20,7 @@ import com.lib_recycleview.view.listview.RecyclerListFragment;
 import com.lib_recycleview.view.staggeredgrid.RecyclerStaggeredGridFragment;
 import com.livebutton.LiveButtonFragment;
 
+import org.micmource.realmreserve.RealmeFragment;
 import org.micmource.widgetlists.widgetlist.tag.DoorActivity;
 
 /**
@@ -78,6 +79,9 @@ public class MainActivity extends ActionBarActivity implements MainFragment.OnLi
                 break;
             case 9:
                 fragment = new MineFragment();
+                break;
+            case 10:
+                fragment = new RealmeFragment();
                 break;
 
         }

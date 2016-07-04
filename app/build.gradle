@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply from: '../config/quality/quality.gradle'
+apply plugin: 'realm-android'
 
 android {
     def globalConfiguration = rootProject.extensions.getByName("ext")
@@ -27,7 +28,6 @@ dependencies {
     def appDependencies = rootProject.ext.appDependencies
     def appTestDependencies = rootProject.ext.appTestDependencies
     def developmentDependencies = rootProject.ext.developmentDependencies
-
     compile appDependencies.recyclerView
     compile appDependencies.rxJava
     compile appDependencies.rxAndroid
@@ -39,4 +39,5 @@ dependencies {
     compile project(':lib_recycleview')
     compile project(path: ':lib_fragmentdialog')
     compile project(':livebutton')
+    compile project(':realmreserve')
 }
