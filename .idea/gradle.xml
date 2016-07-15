@@ -17,6 +17,7 @@
             <option value="$PROJECT_DIR$/livebutton" />
             <option value="$PROJECT_DIR$/realmreserve" />
             <option value="$PROJECT_DIR$/retrofitnorestful" />
+            <option value="$PROJECT_DIR$/rxjavademo" />
           </set>
         </option>
         <option name="myModules">
@@ -30,6 +31,7 @@
             <option value="$PROJECT_DIR$/livebutton" />
             <option value="$PROJECT_DIR$/realmreserve" />
             <option value="$PROJECT_DIR$/retrofitnorestful" />
+            <option value="$PROJECT_DIR$/rxjavademo" />
           </set>
         </option>
       </GradleProjectSettings>
