@@ -20,8 +20,8 @@ android {
 }
 
 dependencies {
-    def liveButtongDependencies = rootProject.ext.liveButtongDependencies
-    def liveButtongTestDependencies = rootProject.ext.liveButtongTestDependencies
+    def liveButtongDependencies = rootProject.ext.js2androidDependencies
+    def liveButtongTestDependencies = rootProject.ext.js2androidTestDependencies
     def developmentDependencies = rootProject.ext.developmentDependencies
 
     compile liveButtongDependencies.annotations

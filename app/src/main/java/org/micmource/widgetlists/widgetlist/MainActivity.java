@@ -10,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.telephony.TelephonyManager;
 import android.widget.Toast;
 
+import com.example.jsandroid.JsFragment;
 import com.lib_fragmentdialog.FriendActivity;
 import com.lib_recycleview.drag.grid.RecyclerGridFragmentDrag;
 import com.lib_recycleview.drag.list.RecyclerListFragmentDrag;
@@ -82,6 +83,9 @@ public class MainActivity extends ActionBarActivity implements MainFragment.OnLi
                 break;
             case 10:
                 fragment = new RealmeFragment();
+                break;
+            case 11:
+                fragment = new JsFragment();
                 break;
 
         }

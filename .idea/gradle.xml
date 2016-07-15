@@ -5,12 +5,13 @@
       <GradleProjectSettings>
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-2.10" />
+        <option name="gradleHome" value="I:\androidstudio\gradle\gradle-2.10" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/androidjs" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/jsandroid" />
             <option value="$PROJECT_DIR$/lib_fragmentdialog" />
             <option value="$PROJECT_DIR$/lib_recycleview" />
             <option value="$PROJECT_DIR$/livebutton" />
@@ -23,6 +24,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/androidjs" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/jsandroid" />
             <option value="$PROJECT_DIR$/lib_fragmentdialog" />
             <option value="$PROJECT_DIR$/lib_recycleview" />
             <option value="$PROJECT_DIR$/livebutton" />

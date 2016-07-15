@@ -31,13 +31,12 @@ dependencies {
     compile appDependencies.recyclerView
     compile appDependencies.rxJava
     compile appDependencies.rxAndroid
-
     androidTestCompile appTestDependencies.junit
     //Development
     compile developmentDependencies.leakCanary
-
     compile project(':lib_recycleview')
     compile project(path: ':lib_fragmentdialog')
     compile project(':livebutton')
     compile project(':realmreserve')
+    compile project(':jsandroid')
 }
