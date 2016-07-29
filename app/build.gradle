@@ -39,4 +39,5 @@ dependencies {
     compile project(':livebutton')
     compile project(':realmreserve')
     compile project(':jsandroid')
+    compile project(':movieseat')
 }

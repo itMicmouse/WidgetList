@@ -38,7 +38,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-
 /**
  * Simple RecyclerView.Adapter that implements {@link ItemTouchHelperAdapter} to respond to move and
  * dismiss events from a {@link android.support.v7.widget.helper.ItemTouchHelper}.
@@ -122,6 +121,11 @@ public class RecyclerListAdapter extends RecyclerView.Adapter<RecyclerListAdapte
         @Override
         public void onItemClear() {
             itemView.setBackgroundColor(0);
+        }
+
+        @Override
+        public void setOnItemClick(View.OnClickListener click) {
+            itemView.setOnClickListener(click);
         }
     }
 }

@@ -1,14 +1,10 @@
 package org.micmource.widgetlists.widgetlist;
 
 import android.app.Fragment;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
-import android.telephony.TelephonyManager;
-import android.widget.Toast;
 
 import com.example.jsandroid.JsFragment;
 import com.lib_fragmentdialog.FriendActivity;
@@ -21,6 +17,7 @@ import com.lib_recycleview.view.listview.RecyclerListFragment;
 import com.lib_recycleview.view.staggeredgrid.RecyclerStaggeredGridFragment;
 import com.livebutton.LiveButtonFragment;
 
+import org.micmource.movieseat.SeatFragment;
 import org.micmource.realmreserve.RealmeFragment;
 import org.micmource.widgetlists.widgetlist.tag.DoorActivity;
 
@@ -86,6 +83,9 @@ public class MainActivity extends ActionBarActivity implements MainFragment.OnLi
                 break;
             case 11:
                 fragment = new JsFragment();
+                break;
+            case 12:
+                fragment = new SeatFragment();
                 break;
 
         }

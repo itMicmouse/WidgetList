@@ -20,6 +20,7 @@ import android.app.Fragment;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.LayoutInflater;
@@ -60,10 +61,9 @@ public class RecyclerListFragmentDrag extends Fragment implements OnStartDragLis
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new FullyLinearLayoutManager(getActivity()));
-
 //        if(adapter.getItemCount()>5){
 //            ViewGroup.LayoutParams layoutParams = recyclerView.getLayoutParams();
-//            layoutParams.height=1000;
+//            layoutParams.height=600;
 //            recyclerView.setLayoutParams(layoutParams);
 //        }
 

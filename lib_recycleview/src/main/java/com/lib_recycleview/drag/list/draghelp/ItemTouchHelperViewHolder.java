@@ -17,6 +17,7 @@
 package com.lib_recycleview.drag.list.draghelp;
 
 import android.support.v7.widget.helper.ItemTouchHelper;
+import android.view.View;
 
 /**
  * Interface to notify an item ViewHolder of relevant callbacks from {@link
@@ -38,4 +39,10 @@ public interface ItemTouchHelperViewHolder {
      * state should be cleared.
      */
     void onItemClear();
+
+    /**
+     * 点击事件
+     * @param click 点击事件
+     */
+    void setOnItemClick(View.OnClickListener click);
 }

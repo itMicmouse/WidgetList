@@ -17,7 +17,7 @@
                 android:id="@+id/rv_draglist_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/shape"></android.support.v7.widget.RecyclerView>
+                android:background="@drawable/shape"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
