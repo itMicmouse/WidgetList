@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/WidgetList.iml" filepath="$PROJECT_DIR$/WidgetList.iml" />
-      <module fileurl="file://$PROJECT_DIR$/androidjs/androidjs.iml" filepath="$PROJECT_DIR$/androidjs/androidjs.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/disklrucachedemo/disklrucachedemo.iml" filepath="$PROJECT_DIR$/disklrucachedemo/disklrucachedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsandroid/jsandroid.iml" filepath="$PROJECT_DIR$/jsandroid/jsandroid.iml" />
