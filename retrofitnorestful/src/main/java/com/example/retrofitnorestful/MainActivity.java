@@ -1,6 +1,6 @@
 package com.example.retrofitnorestful;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -9,16 +9,18 @@ import com.example.retrofitnorestful.net.UserService;
 import com.example.retrofitnorestful.net.domain.User;
 import com.example.retrofitnorestful.utils.RetrofitUtils;
 
+
 import java.io.IOException;
 
-public class MainActivity extends AppCompatActivity {
-
+/**
+ * Created by yakun on 2016/8/2.
+ */
+public class MainActivity extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
     public void click(View view) throws IOException {
         new Thread(){
             @Override

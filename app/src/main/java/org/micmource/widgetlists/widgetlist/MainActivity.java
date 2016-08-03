@@ -17,6 +17,7 @@ import com.lib_recycleview.view.listview.RecyclerListFragment;
 import com.lib_recycleview.view.staggeredgrid.RecyclerStaggeredGridFragment;
 import com.livebutton.LiveButtonFragment;
 
+import org.micmource.lib_bluetooth_printer.BluetoothPrinterActivity;
 import org.micmource.movieseat.SeatFragment;
 import org.micmource.realmreserve.RealmeFragment;
 import org.micmource.widgetlists.widgetlist.tag.DoorActivity;
@@ -87,6 +88,10 @@ public class MainActivity extends ActionBarActivity implements MainFragment.OnLi
             case 12:
                 fragment = new SeatFragment();
                 break;
+            case 13:
+                intent = new Intent(MainActivity.this, BluetoothPrinterActivity.class);
+                startActivity(intent);
+                return;
 
         }
         getFragmentManager().beginTransaction()

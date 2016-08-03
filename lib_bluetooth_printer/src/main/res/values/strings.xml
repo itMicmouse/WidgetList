@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">lib_bluetooth_printer</string>
+    <string name="has_paired">已配对</string>
+</resources>
