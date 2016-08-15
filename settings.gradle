@@ -1,1 +1,1 @@
-include ':app', ':retrofitnorestful', ':lib_recycleview', ':lib_fragmentdialog', ':livebutton', ':realmreserve', ':jsandroid', ':rxjavademo', ':movieseat', ':lib_bluetooth_printer'
+include ':app', ':retrofitnorestful', ':lib_recycleview', ':lib_fragmentdialog', ':livebutton', ':realmreserve', ':jsandroid', ':rxjavademo', ':movieseat', ':lib_bluetooth_printer', ':lib_sqldelight'

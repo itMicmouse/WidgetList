@@ -4,11 +4,11 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/WidgetList.iml" filepath="$PROJECT_DIR$/WidgetList.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/disklrucachedemo/disklrucachedemo.iml" filepath="$PROJECT_DIR$/disklrucachedemo/disklrucachedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsandroid/jsandroid.iml" filepath="$PROJECT_DIR$/jsandroid/jsandroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_bluetooth_printer/lib_bluetooth_printer.iml" filepath="$PROJECT_DIR$/lib_bluetooth_printer/lib_bluetooth_printer.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_fragmentdialog/lib_fragmentdialog.iml" filepath="$PROJECT_DIR$/lib_fragmentdialog/lib_fragmentdialog.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_recycleview/lib_recycleview.iml" filepath="$PROJECT_DIR$/lib_recycleview/lib_recycleview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_sqldelight/lib_sqldelight.iml" filepath="$PROJECT_DIR$/lib_sqldelight/lib_sqldelight.iml" />
       <module fileurl="file://$PROJECT_DIR$/livebutton/livebutton.iml" filepath="$PROJECT_DIR$/livebutton/livebutton.iml" />
       <module fileurl="file://$PROJECT_DIR$/movieseat/movieseat.iml" filepath="$PROJECT_DIR$/movieseat/movieseat.iml" />
       <module fileurl="file://$PROJECT_DIR$/realmreserve/realmreserve.iml" filepath="$PROJECT_DIR$/realmreserve/realmreserve.iml" />
