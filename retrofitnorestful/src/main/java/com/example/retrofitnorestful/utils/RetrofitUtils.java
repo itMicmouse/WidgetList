@@ -16,7 +16,7 @@ public class RetrofitUtils {
         if (singleton == null) {
             synchronized (RetrofitUtils.class) {
                 singleton = new Retrofit.Builder().
-                        baseUrl("http://192.168.16.202:8080")
+                        baseUrl("http://192.168.56.1:8080")
                         .client(OkHttpUtils.getInstance())
                         .addConverterFactory(CustomConverterFactory.create())
                         .build();

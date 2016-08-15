@@ -3,17 +3,21 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="LOCAL" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-2.10" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/disklrucachedemo" />
             <option value="$PROJECT_DIR$/jsandroid" />
+            <option value="$PROJECT_DIR$/lib_animation" />
             <option value="$PROJECT_DIR$/lib_bluetooth_printer" />
+            <option value="$PROJECT_DIR$/lib_drawable" />
             <option value="$PROJECT_DIR$/lib_fragmentdialog" />
+            <option value="$PROJECT_DIR$/lib_mvvm" />
             <option value="$PROJECT_DIR$/lib_recycleview" />
+            <option value="$PROJECT_DIR$/lib_sqlbrite" />
             <option value="$PROJECT_DIR$/lib_sqldelight" />
             <option value="$PROJECT_DIR$/livebutton" />
             <option value="$PROJECT_DIR$/movieseat" />
@@ -26,10 +30,15 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/disklrucachedemo" />
             <option value="$PROJECT_DIR$/jsandroid" />
+            <option value="$PROJECT_DIR$/lib_animation" />
             <option value="$PROJECT_DIR$/lib_bluetooth_printer" />
+            <option value="$PROJECT_DIR$/lib_drawable" />
             <option value="$PROJECT_DIR$/lib_fragmentdialog" />
+            <option value="$PROJECT_DIR$/lib_mvvm" />
             <option value="$PROJECT_DIR$/lib_recycleview" />
+            <option value="$PROJECT_DIR$/lib_sqlbrite" />
             <option value="$PROJECT_DIR$/lib_sqldelight" />
             <option value="$PROJECT_DIR$/livebutton" />
             <option value="$PROJECT_DIR$/movieseat" />

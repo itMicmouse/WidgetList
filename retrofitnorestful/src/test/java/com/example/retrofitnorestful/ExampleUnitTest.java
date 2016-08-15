@@ -23,13 +23,19 @@ public class ExampleUnitTest {
     @Test
     public void testNet() throws Exception {
         UserService api = RetrofitUtils.createApi(UserService.class);
-        User name1 = api.loadUser("update").execute().body();
+        User name1 = api.loadUser("update","static").execute().body();
+        System.out.println(name1.getName());
+    }
+    @Test
+    public void testNetRx() throws Exception {
+        UserService api = RetrofitUtils.createApiRx(UserService.class);
+        User name1 = api.loadUser("update","static").execute().body();
         System.out.println(name1.getName());
     }
     @Test
     public void testNetNOrest() throws Exception {
         UserService api = RetrofitUtils.createApi(UserService.class);
-        User name1 = api.loadUser("name").execute().body();
+        User name1 = api.loadUser("name","name").execute().body();
         System.out.println(name1.getName());
     }
     @Test

@@ -28,7 +28,7 @@ public class MainActivity extends Activity{
                 UserService api = RetrofitUtils.createApi(UserService.class);
                 User name1 = null;
                 try {
-                    name1 = api.loadUser("name").execute().body();
+                    name1 = api.loadUser("name","paht").execute().body();
                     System.out.println(name1.getName());
                     Log.e("MainActivity.class",name1.getName());
                 } catch (IOException e) {

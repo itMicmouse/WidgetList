@@ -15,6 +15,6 @@ import retrofit2.converter.gson.main.impl.ClassConverter;
 public interface UserService {
     @Converter(converter = ClassConverter.class)
 //    @Data("data")
-    @GET("{name}.json")
-    Call<User> loadUser(@Path("name") String name);
+    @GET("path/{name}.json")
+    Call<User> loadUser(@Path("name") String name,@Path("path") String path);
 }
