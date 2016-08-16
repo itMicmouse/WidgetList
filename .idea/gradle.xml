@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/appdagger2" />
             <option value="$PROJECT_DIR$/disklrucachedemo" />
             <option value="$PROJECT_DIR$/jsandroid" />
             <option value="$PROJECT_DIR$/lib_animation" />
@@ -30,6 +31,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/appdagger2" />
             <option value="$PROJECT_DIR$/disklrucachedemo" />
             <option value="$PROJECT_DIR$/jsandroid" />
             <option value="$PROJECT_DIR$/lib_animation" />
