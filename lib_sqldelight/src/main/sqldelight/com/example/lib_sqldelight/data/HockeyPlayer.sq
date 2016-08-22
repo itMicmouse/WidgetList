@@ -1,4 +1,3 @@
-
 CREATE TABLE hockey_player (
   _id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
   number INTEGER NOT NULL,
@@ -11,3 +10,12 @@ select_by_name:
 SELECT *
 FROM hockey_player
 WHERE name = ?;
+
+player_names:
+SELECT name
+FROM hockey_player;
+
+names_for_number:
+SELECT number, group_concat(name)
+FROM hockey_player
+GROUP BY number;
