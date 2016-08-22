@@ -41,4 +41,5 @@ dependencies {
     compile project(':jsandroid')
     compile project(':movieseat')
     compile project(':lib_bluetooth_printer');
+    compile project(':lib_sqldelight');
 }

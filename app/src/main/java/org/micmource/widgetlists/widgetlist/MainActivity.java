@@ -7,6 +7,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 
 import com.example.jsandroid.JsFragment;
+import com.example.lib_sqldelight.SqldeLightFragment;
 import com.lib_fragmentdialog.FriendActivity;
 import com.lib_recycleview.drag.grid.RecyclerGridFragmentDrag;
 import com.lib_recycleview.drag.list.RecyclerListFragmentDrag;
@@ -92,7 +93,9 @@ public class MainActivity extends ActionBarActivity implements MainFragment.OnLi
                 intent = new Intent(MainActivity.this, BluetoothPrinterActivity.class);
                 startActivity(intent);
                 return;
-
+            case 14:
+                fragment = new SqldeLightFragment();
+                break;
         }
         getFragmentManager().beginTransaction()
                 .replace(R.id.content, fragment)

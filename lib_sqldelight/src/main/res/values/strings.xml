@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">lib_SQLDelight</string>
+    <string name="founded">Founded %s</string>
 </resources>
