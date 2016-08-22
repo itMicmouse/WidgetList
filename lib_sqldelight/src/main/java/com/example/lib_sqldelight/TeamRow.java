@@ -7,17 +7,12 @@ import android.widget.TextView;
 
 import com.example.lib_sqldelight.db.Team;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 import java.text.SimpleDateFormat;
 
 public final class TeamRow extends LinearLayout {
-//    @BindView(R.id.team_name)
     TextView teamName;
-//    @BindView(R.id.coach_name)
     TextView coachName;
-//    @BindView(R.id.founded)
     TextView founded;
 
     private SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
@@ -29,7 +24,10 @@ public final class TeamRow extends LinearLayout {
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
-        ButterKnife.bind(this);
+        teamName = (TextView) findViewById(R.id.team_name);
+        coachName = (TextView) findViewById(R.id.coach_name);
+        founded = (TextView) findViewById(R.id.founded);
+
     }
 
     public void populate(Team team) {
