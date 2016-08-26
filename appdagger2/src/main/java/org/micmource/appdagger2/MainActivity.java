@@ -2,24 +2,39 @@ package org.micmource.appdagger2;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ListView;
-
-import org.micmource.appdagger2.adapter.UserAdapter;
+import android.widget.TextView;
 
 import javax.inject.Inject;
 
 public class MainActivity extends AppCompatActivity {
 
+    private TextView tv_name;
+
     @Inject
-    UserAdapter adapter;
+    DaggerPresenter presenter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ListView lv_list = (ListView) findViewById(R.id.lv_list);
+        tv_name = (TextView) findViewById(R.id.tv_name);
 
+        injectA();
 
-        lv_list.setAdapter(adapter);
+        presenter.setUserName();
+    }
+
+    private void injectA(){
+        DaggerActivityComponent.builder()
+                .activityModule(new ActivityModule(this))
+                .build()
+                .inject(this);
+    }
+
+    public void showUserName(String name) {
+        tv_name.setText(name);
     }
 }

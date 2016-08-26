@@ -1,4 +1,4 @@
-include ':app', ':retrofitnorestful', ':appdagger2',
+include ':app', ':retrofitnorestful', ':appdagger2', ':lib_dagger2',
         ':lib_recycleview', ':lib_fragmentdialog',
         ':livebutton', ':realmreserve',
         ':jsandroid', ':rxjavademo',

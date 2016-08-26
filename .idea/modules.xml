@@ -5,11 +5,11 @@
       <module fileurl="file://$PROJECT_DIR$/WidgetList.iml" filepath="$PROJECT_DIR$/WidgetList.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/appdagger2/appdagger2.iml" filepath="$PROJECT_DIR$/appdagger2/appdagger2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/appdagger2/appdagger2.iml" filepath="$PROJECT_DIR$/appdagger2/appdagger2.iml" />
       <module fileurl="file://$PROJECT_DIR$/disklrucachedemo/disklrucachedemo.iml" filepath="$PROJECT_DIR$/disklrucachedemo/disklrucachedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsandroid/jsandroid.iml" filepath="$PROJECT_DIR$/jsandroid/jsandroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_animation/lib_animation.iml" filepath="$PROJECT_DIR$/lib_animation/lib_animation.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_bluetooth_printer/lib_bluetooth_printer.iml" filepath="$PROJECT_DIR$/lib_bluetooth_printer/lib_bluetooth_printer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_dagger2/lib_dagger2.iml" filepath="$PROJECT_DIR$/lib_dagger2/lib_dagger2.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_drawable/lib_drawable.iml" filepath="$PROJECT_DIR$/lib_drawable/lib_drawable.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_fragmentdialog/lib_fragmentdialog.iml" filepath="$PROJECT_DIR$/lib_fragmentdialog/lib_fragmentdialog.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_mvvm/lib_mvvm.iml" filepath="$PROJECT_DIR$/lib_mvvm/lib_mvvm.iml" />

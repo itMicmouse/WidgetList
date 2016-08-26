@@ -19,8 +19,6 @@ import com.example.lib_sqldelight.db.HockeyOpenHelper;
 import com.example.lib_sqldelight.db.Team;
 import com.example.lib_sqldelight.db.active.TeamActive;
 
-import java.util.GregorianCalendar;
-
 /**
  * Created by yakun on 2016/8/22.
  */
