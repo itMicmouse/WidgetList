@@ -42,4 +42,6 @@ dependencies {
     compile project(':movieseat')
     compile project(':lib_bluetooth_printer');
     compile project(':lib_sqldelight');
+    compile project(':pointer');
+    testCompile 'org.testng:testng:6.9.6'
 }

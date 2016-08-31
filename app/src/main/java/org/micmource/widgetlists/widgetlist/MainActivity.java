@@ -20,6 +20,7 @@ import com.livebutton.LiveButtonFragment;
 
 import org.micmource.lib_bluetooth_printer.BluetoothPrinterActivity;
 import org.micmource.movieseat.SeatFragment;
+import org.micmource.pointer.TemperatureViewFragment;
 import org.micmource.realmreserve.RealmeFragment;
 import org.micmource.widgetlists.widgetlist.tag.DoorActivity;
 
@@ -95,6 +96,9 @@ public class MainActivity extends ActionBarActivity implements MainFragment.OnLi
                 return;
             case 14:
                 fragment = new SqldeLightFragment();
+                break;
+            case 15:
+                fragment = new TemperatureViewFragment();
                 break;
         }
         getFragmentManager().beginTransaction()

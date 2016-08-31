@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/appdagger2" />
+            <option value="$PROJECT_DIR$/appmvvm" />
             <option value="$PROJECT_DIR$/disklrucachedemo" />
             <option value="$PROJECT_DIR$/jsandroid" />
             <option value="$PROJECT_DIR$/lib_animation" />
@@ -17,12 +18,12 @@
             <option value="$PROJECT_DIR$/lib_dagger2" />
             <option value="$PROJECT_DIR$/lib_drawable" />
             <option value="$PROJECT_DIR$/lib_fragmentdialog" />
-            <option value="$PROJECT_DIR$/lib_mvvm" />
             <option value="$PROJECT_DIR$/lib_recycleview" />
             <option value="$PROJECT_DIR$/lib_sqlbrite" />
             <option value="$PROJECT_DIR$/lib_sqldelight" />
             <option value="$PROJECT_DIR$/livebutton" />
             <option value="$PROJECT_DIR$/movieseat" />
+            <option value="$PROJECT_DIR$/pointer" />
             <option value="$PROJECT_DIR$/realmreserve" />
             <option value="$PROJECT_DIR$/retrofitnorestful" />
             <option value="$PROJECT_DIR$/rxjavademo" />
@@ -33,6 +34,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/appdagger2" />
+            <option value="$PROJECT_DIR$/appmvvm" />
             <option value="$PROJECT_DIR$/disklrucachedemo" />
             <option value="$PROJECT_DIR$/jsandroid" />
             <option value="$PROJECT_DIR$/lib_animation" />
@@ -40,12 +42,12 @@
             <option value="$PROJECT_DIR$/lib_dagger2" />
             <option value="$PROJECT_DIR$/lib_drawable" />
             <option value="$PROJECT_DIR$/lib_fragmentdialog" />
-            <option value="$PROJECT_DIR$/lib_mvvm" />
             <option value="$PROJECT_DIR$/lib_recycleview" />
             <option value="$PROJECT_DIR$/lib_sqlbrite" />
             <option value="$PROJECT_DIR$/lib_sqldelight" />
             <option value="$PROJECT_DIR$/livebutton" />
             <option value="$PROJECT_DIR$/movieseat" />
+            <option value="$PROJECT_DIR$/pointer" />
             <option value="$PROJECT_DIR$/realmreserve" />
             <option value="$PROJECT_DIR$/retrofitnorestful" />
             <option value="$PROJECT_DIR$/rxjavademo" />
