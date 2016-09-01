@@ -26,7 +26,7 @@ dependencies {
 
     provided recycleviewDependencies.recyclerView
 
-    androidTestCompile recycleviewTestDependencies.junit
+    testCompile recycleviewTestDependencies.junit
 
     //Development
     compile developmentDependencies.leakCanary

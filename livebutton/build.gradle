@@ -26,7 +26,7 @@ dependencies {
 
     compile liveButtongDependencies.annotations
 
-    androidTestCompile liveButtongTestDependencies.junit
+    testCompile liveButtongTestDependencies.junit
 
     //Development
     compile developmentDependencies.leakCanary

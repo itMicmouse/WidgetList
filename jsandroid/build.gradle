@@ -20,13 +20,13 @@ android {
 }
 
 dependencies {
-    def liveButtongDependencies = rootProject.ext.js2androidDependencies
-    def liveButtongTestDependencies = rootProject.ext.js2androidTestDependencies
+    def js2androidDependencies = rootProject.ext.js2androidDependencies
+    def js2androidTestDependencies = rootProject.ext.js2androidTestDependencies
     def developmentDependencies = rootProject.ext.developmentDependencies
 
-    compile liveButtongDependencies.annotations
+    compile js2androidDependencies.annotations
 
-    androidTestCompile liveButtongTestDependencies.junit
+    testCompile js2androidTestDependencies.junit
 
     //Development
     compile developmentDependencies.leakCanary

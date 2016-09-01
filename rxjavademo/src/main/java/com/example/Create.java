@@ -154,7 +154,6 @@ public class Create {
     }
 
     public static void timer() {
-        //每隔两秒产生一个数字
         Observable.timer(2, 2, TimeUnit.SECONDS).subscribe(new Subscriber<Long>() {
             @Override
             public void onCompleted() {
@@ -219,7 +218,6 @@ public class Create {
         Observable.just(1,2,3).repeatWhen(new Func1<Observable<? extends Void>, Observable<?>>() {
             @Override
             public Observable<?> call(Observable<? extends Void> observable) {
-                //重复3次
                 return observable.zipWith(Observable.range(1, 3), new Func2<Void, Integer, Integer>() {
                     @Override
                     public Integer call(Void aVoid, Integer integer) {
@@ -229,7 +227,6 @@ public class Create {
                     @Override
                     public Observable<?> call(Integer integer) {
                         System.out.println("delay repeat the " + integer + " count");
-                        //1秒钟重复一次
                         return Observable.timer(1, TimeUnit.SECONDS);
                     }
                 });

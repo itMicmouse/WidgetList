@@ -81,7 +81,6 @@ public class TemperatureView extends View {
         progressRadius = mSize / 2 - dp2px(10);
         canvas.save();
         RectF rectF = new RectF(-progressRadius, -progressRadius, progressRadius, progressRadius);
-
         // 设置为圆角
         progressPaint.setStrokeCap(Paint.Cap.ROUND);
         progressPaint.setColor(Color.GREEN);

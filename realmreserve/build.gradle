@@ -27,7 +27,7 @@ dependencies {
 
     compile realmreserveDependencies.annotations
 
-    androidTestCompile realmreserveTestDependencies.junit
+    testCompile realmreserveTestDependencies.junit
 
     //Development
     compile developmentDependencies.leakCanary
