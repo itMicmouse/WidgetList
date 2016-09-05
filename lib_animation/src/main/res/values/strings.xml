@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">lib_animation</string>
+    <string name="alpha">透明度动画</string>
+    <string name="rotate">旋转动画</string>
+    <string name="translate">位移动画</string>
+    <string name="scale">缩放动画</string>
 </resources>
