@@ -18,6 +18,7 @@ import com.lib_recycleview.view.listview.RecyclerListFragment;
 import com.lib_recycleview.view.staggeredgrid.RecyclerStaggeredGridFragment;
 import com.livebutton.LiveButtonFragment;
 
+import org.micmource.lib_animation.AnimationFragment;
 import org.micmource.lib_bluetooth_printer.BluetoothPrinterActivity;
 import org.micmource.movieseat.SeatFragment;
 import org.micmource.pointer.TemperatureViewFragment;
@@ -99,6 +100,9 @@ public class MainActivity extends ActionBarActivity implements MainFragment.OnLi
                 break;
             case 15:
                 fragment = new TemperatureViewFragment();
+                break;
+            case 16:
+                fragment = new AnimationFragment();
                 break;
         }
         getFragmentManager().beginTransaction()
