@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Pointer</string>
+    <string name="temperature">温度</string>
 </resources>

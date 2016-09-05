@@ -37,7 +37,7 @@ public class TemperatureViewFragment extends Fragment {
         SeekBar seekCorners = (SeekBar) view.findViewById(R.id.seekCorners);
 
         setOnSeekBarChangeListener(seekCorners, CORNERS);
-//        tv_one.setCurrentTemp(12.3f);
+        tv_one.setCurrentTemp(12.3f);
     }
 
     public void setOnSeekBarChangeListener(SeekBar seekBar, final int id) {
@@ -46,7 +46,7 @@ public class TemperatureViewFragment extends Fragment {
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 switch (id) {
                     case CORNERS:
-//                        tv_one.setCurrentTemp(progress);
+                        tv_one.setCurrentTemp(progress);
                         break;
                 }
             }
