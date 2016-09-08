@@ -1,5 +1,4 @@
 <resources>
     <string name="app_name">MyFirstWear</string>
-    <string name="message">Watch face tapped</string>
-    <string name="my_analog_name">My Analog</string>
+    <string name="hello_world">Hello World!</string>
 </resources>

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/WidgetList.iml" filepath="$PROJECT_DIR$/WidgetList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android7/android7.iml" filepath="$PROJECT_DIR$/android7/android7.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/appdagger2/appdagger2.iml" filepath="$PROJECT_DIR$/appdagger2/appdagger2.iml" />
       <module fileurl="file://$PROJECT_DIR$/appmvvm/appmvvm.iml" filepath="$PROJECT_DIR$/appmvvm/appmvvm.iml" />

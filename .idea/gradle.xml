@@ -8,6 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/android7" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/appdagger2" />
             <option value="$PROJECT_DIR$/appmvvm" />
