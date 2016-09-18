@@ -44,5 +44,6 @@ dependencies {
     compile project(':lib_sqldelight');
     compile project(':pointer');
     compile project(':lib_animation');
+    compile project(':lib_map');
     testCompile 'org.testng:testng:6.9.6'
 }

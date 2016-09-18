@@ -14,12 +14,12 @@
       <module fileurl="file://$PROJECT_DIR$/lib_dagger2/lib_dagger2.iml" filepath="$PROJECT_DIR$/lib_dagger2/lib_dagger2.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_drawable/lib_drawable.iml" filepath="$PROJECT_DIR$/lib_drawable/lib_drawable.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_fragmentdialog/lib_fragmentdialog.iml" filepath="$PROJECT_DIR$/lib_fragmentdialog/lib_fragmentdialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_map/lib_map.iml" filepath="$PROJECT_DIR$/lib_map/lib_map.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_recycleview/lib_recycleview.iml" filepath="$PROJECT_DIR$/lib_recycleview/lib_recycleview.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_sqlbrite/lib_sqlbrite.iml" filepath="$PROJECT_DIR$/lib_sqlbrite/lib_sqlbrite.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_sqldelight/lib_sqldelight.iml" filepath="$PROJECT_DIR$/lib_sqldelight/lib_sqldelight.iml" />
       <module fileurl="file://$PROJECT_DIR$/livebutton/livebutton.iml" filepath="$PROJECT_DIR$/livebutton/livebutton.iml" />
       <module fileurl="file://$PROJECT_DIR$/movieseat/movieseat.iml" filepath="$PROJECT_DIR$/movieseat/movieseat.iml" />
-      <module fileurl="file://$PROJECT_DIR$/myfirstwear/myfirstwear.iml" filepath="$PROJECT_DIR$/myfirstwear/myfirstwear.iml" />
       <module fileurl="file://$PROJECT_DIR$/pointer/pointer.iml" filepath="$PROJECT_DIR$/pointer/pointer.iml" />
       <module fileurl="file://$PROJECT_DIR$/realmreserve/realmreserve.iml" filepath="$PROJECT_DIR$/realmreserve/realmreserve.iml" />
       <module fileurl="file://$PROJECT_DIR$/retrofitnorestful/retrofitnorestful.iml" filepath="$PROJECT_DIR$/retrofitnorestful/retrofitnorestful.iml" />

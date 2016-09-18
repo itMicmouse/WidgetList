@@ -7,6 +7,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 
 import com.example.jsandroid.JsFragment;
+import com.example.lib_map.StartActivity;
 import com.example.lib_sqldelight.SqldeLightFragment;
 import com.lib_fragmentdialog.FriendActivity;
 import com.lib_recycleview.drag.grid.RecyclerGridFragmentDrag;
@@ -104,6 +105,10 @@ public class MainActivity extends ActionBarActivity implements MainFragment.OnLi
             case 16:
                 fragment = new AnimationFragment();
                 break;
+            case 17:
+                intent = new Intent(MainActivity.this, StartActivity.class);
+                startActivity(intent);
+                return;
         }
         getFragmentManager().beginTransaction()
                 .replace(R.id.content, fragment)
