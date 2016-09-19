@@ -14,11 +14,18 @@ import android.widget.TextView;
 
 import org.micmource.widgetlists.widgetlist.R;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class DoorActivity extends Activity {
 
 	private String[] mVals = new String[] { "bingo", "googol", "apple", "bingoogolapple", "helloworld", "tiant", "tiant", "tiant" };
-	private BGAFlowLayout mFlowLayout;
-	private EditText mTagEt;
+	@BindView(R.id.flowlayout)
+	BGAFlowLayout mFlowLayout;
+	@BindView(R.id.et_main_tag)
+	EditText mTagEt;
+
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +36,7 @@ public class DoorActivity extends Activity {
 
 	private void flowLayout() {
 		setContentView(R.layout.activity_door);
-		mTagEt = (EditText) findViewById(R.id.et_main_tag);
-		mFlowLayout = (BGAFlowLayout) findViewById(R.id.flowlayout);
+		ButterKnife.bind(this);
 		initData();
 		mTagEt.setOnEditorActionListener(new EditText.OnEditorActionListener() {
 
