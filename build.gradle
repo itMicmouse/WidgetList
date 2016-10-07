@@ -11,10 +11,12 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.1.2'
-        classpath "io.realm:realm-gradle-plugin:1.1.0"
+        classpath "io.realm:realm-gradle-plugin:2.0.0"
         classpath 'com.squareup.sqldelight:gradle-plugin:0.4.4'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
         classpath "net.ltgt.gradle:gradle-apt-plugin:0.4"
+
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.0'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }

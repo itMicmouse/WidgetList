@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/lib_dagger2/lib_dagger2.iml" filepath="$PROJECT_DIR$/lib_dagger2/lib_dagger2.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_drawable/lib_drawable.iml" filepath="$PROJECT_DIR$/lib_drawable/lib_drawable.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_fragmentdialog/lib_fragmentdialog.iml" filepath="$PROJECT_DIR$/lib_fragmentdialog/lib_fragmentdialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_greendao3/lib_greendao3.iml" filepath="$PROJECT_DIR$/lib_greendao3/lib_greendao3.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_map/lib_map.iml" filepath="$PROJECT_DIR$/lib_map/lib_map.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_recycleview/lib_recycleview.iml" filepath="$PROJECT_DIR$/lib_recycleview/lib_recycleview.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_sqlbrite/lib_sqlbrite.iml" filepath="$PROJECT_DIR$/lib_sqlbrite/lib_sqlbrite.iml" />
