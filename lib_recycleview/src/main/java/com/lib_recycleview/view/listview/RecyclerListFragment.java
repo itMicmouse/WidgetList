@@ -57,8 +57,8 @@ public class RecyclerListFragment extends Fragment {
         recyclerView.setBackgroundColor(Color.WHITE);
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false));
-        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(getActivity(), DividerItemDecoration.HORIZONTAL_LIST);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.VERTICAL,false));
+        LinearLayoutColorDivider dividerItemDecoration = new LinearLayoutColorDivider(getResources(),R.color.colorPrimary,R.dimen.list,LinearLayoutManager.VERTICAL);
         recyclerView.addItemDecoration(dividerItemDecoration);
     }
 }

@@ -48,16 +48,6 @@ public class DividerItemDecoration extends RecyclerView.ItemDecoration {
         mOrientation = orientation;
     }
 
-    @Override
-    public void onDraw(Canvas c, RecyclerView parent,RecyclerView.State state) {
-        if (mOrientation == VERTICAL_LIST) {
-            drawVertical(c, parent);
-        } else {
-            drawHorizontal(c, parent);
-        }
-
-    }
-
     /**
      * draw vertical line
      *
@@ -94,6 +84,15 @@ public class DividerItemDecoration extends RecyclerView.ItemDecoration {
         }
     }
 
+    @Override
+    public void onDraw(Canvas c, RecyclerView parent,RecyclerView.State state) {
+        if (mOrientation == VERTICAL_LIST) {
+            drawVertical(c, parent);
+        } else {
+            drawHorizontal(c, parent);
+        }
+
+    }
 
     @Override
     public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
