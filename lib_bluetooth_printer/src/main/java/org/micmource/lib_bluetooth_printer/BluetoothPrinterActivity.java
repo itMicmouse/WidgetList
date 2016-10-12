@@ -181,7 +181,9 @@ public class BluetoothPrinterActivity extends AppCompatActivity {
             try {
                 // 通过 BluetoothDevice 获得 BluetoothSocket 对象
                 tmp = device.createRfcommSocketToServiceRecord(UUID.fromString("00001101-0000-1000-8000-00805F9B34FB"));
-            } catch (IOException e) { }
+            } catch (IOException e) {
+
+            }
             mmSocket = tmp;
         }
 

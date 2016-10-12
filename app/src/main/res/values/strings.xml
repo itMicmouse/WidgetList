@@ -3,6 +3,7 @@
 
 
     <array name="main_items">
+        <item>Android 基本信息读取</item>
         <item>recycleView_listView 可拖拽</item>
         <item>recycleView_Grid 可拖拽</item>
         <item>封装DialogFragment</item>

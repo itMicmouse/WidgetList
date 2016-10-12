@@ -45,6 +45,7 @@ dependencies {
     compile project(':pointer');
     compile project(':lib_animation');
     compile project(':lib_map');
+    compile project(':lib_push');
     testCompile 'org.testng:testng:6.9.6'
 
     compile 'com.jakewharton:butterknife:8.4.0'

@@ -16,16 +16,12 @@ public class Test {
         double f1 = bg.setScale(2, BigDecimal.ROUND_HALF_UP).doubleValue();
         System.out.println("m1"+f1);
     }
-    /**
-     * DecimalFormat转换最简便
-     */
+//
     public void m2() {
         DecimalFormat df = new DecimalFormat("#.00");
         System.out.println("m2"+df.format(14));
     }
-    /**
-     * String.format打印最简便
-     */
+
     public void m3() {
         System.out.println("m3"+String.format("%.2f", bb));
     }

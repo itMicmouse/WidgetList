@@ -15,6 +15,6 @@
   -->
 <resources>
 
-    <integer name="grid_columns">5</integer>
+    <integer name="grid_columns">3</integer>
 
 </resources>

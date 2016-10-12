@@ -4,6 +4,8 @@ package com.example.lib_greendao3;
  * Created by yakunyang on 16/10/6.
  */
 
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -21,6 +23,7 @@ public class DateUtil {
 
     /**
      * 点击后刷新
+     *
      * @return
      */
     public static boolean toRefresh() {
@@ -37,6 +40,7 @@ public class DateUtil {
 
     /**
      * 时间戳转时间
+     *
      * @param dateLong
      * @return
      */
@@ -274,15 +278,51 @@ public class DateUtil {
 
 
     public static void main(String[] args) {
-        System.out.println(getDate(System.currentTimeMillis()));
-
-
         Calendar instance = Calendar.getInstance(Locale.CHINA);
-        instance.set(2016,1,23,3,23,30);
+        instance.set(2016, 9, 7, 3, 23, 30);
 
-        System.out.println(getTimeDiffDesc(instance.getTime()));
-        System.out.println(getTimeDisplay(instance.getTime()));
-        System.out.println(getTime4TimeTitle(instance.getTime()));
-        System.out.println(getCurTimeStamp());
+//        System.out.println(getTimeDiffDesc(instance.getTime()));
+//        System.out.println(getTimeDisplay(instance.getTime()));
+//        System.out.println(getTime4TimeTitle(instance.getTime()));
+//        System.out.println(getCurTimeStamp());
+        System.out.println(prescriptionTime(new Date()));
+
+        datatest();
+    }
+
+    public static String prescriptionTime(Date date) {
+
+        SimpleDateFormat format = new SimpleDateFormat("MM-dd    HH:mm");
+        Calendar instance = Calendar.getInstance();
+        instance.setTime(date);
+        int i = instance.get(Calendar.HOUR_OF_DAY);
+        String format1 = format.format(date);
+        if (i < 6) {
+            return format1.replace("   ", "  凌晨");
+        } else if (i < 12) {
+            return (format1.replace("   ", "  上午"));
+        } else if (i < 18) {
+            return (format1.replace("   ", "  下午"));
+        } else if (i < 24) {
+            return (format1.replace("   ", "  晚上"));
+        } else {
+            return "时间错误";
+        }
+
+    }
+
+    public static String getData_Time() {
+        Date date = new Date();
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        return format.format(date);
+    }
+
+    public static void datatest() {
+        DecimalFormat df = new DecimalFormat("0.00");
+        BigDecimal yuanNum = new BigDecimal("3.");
+
+        System.out.println(df.format(yuanNum));
+
+
     }
 }

@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".tag.DoorActivity" />
+        <activity android:name=".DevInfo.DevInfoActivity"/>
     </application>
 
 </manifest>
