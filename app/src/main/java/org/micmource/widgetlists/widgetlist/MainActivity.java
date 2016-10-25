@@ -116,6 +116,10 @@ public class MainActivity extends ActionBarActivity implements MainFragment.OnLi
                 intent = new Intent(MainActivity.this, StartActivity.class);
                 startActivity(intent);
                 return;
+            case 19:
+                intent = new Intent(MainActivity.this, com.zhiyijiankang.cloudclinck.lib_push.MainActivity.class);
+                startActivity(intent);
+                return;
         }
         getFragmentManager().beginTransaction()
                 .replace(R.id.content, fragment)

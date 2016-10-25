@@ -21,10 +21,12 @@
             <option value="$PROJECT_DIR$/lib_fragmentdialog" />
             <option value="$PROJECT_DIR$/lib_greendao3" />
             <option value="$PROJECT_DIR$/lib_map" />
+            <option value="$PROJECT_DIR$/lib_protocol" />
             <option value="$PROJECT_DIR$/lib_push" />
             <option value="$PROJECT_DIR$/lib_recycleview" />
             <option value="$PROJECT_DIR$/lib_sqlbrite" />
             <option value="$PROJECT_DIR$/lib_sqldelight" />
+            <option value="$PROJECT_DIR$/library-PullToRefresh_2110" />
             <option value="$PROJECT_DIR$/livebutton" />
             <option value="$PROJECT_DIR$/movieseat" />
             <option value="$PROJECT_DIR$/pointer" />
