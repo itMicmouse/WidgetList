@@ -1,16 +1,40 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zhiyijiankang.cloudclinck.lib_push">
 
+    <permission
+        android:name="org.micmource.appdemo.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required -->
+    <uses-permission android:name="org.micmource.appdemo.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
     <application android:allowBackup="true" android:label="@string/app_name"
         android:supportsRtl="true">
         <!-- For test only 测试的主程序-->
-        <activity
-            android:name="com.zhiyijiankang.cloudclinck.lib_push.MainActivity"
-            android:label="@string/app_name" />
+        <activity android:name="com.zhiyijiankang.cloudclinck.lib_push.MainActivity"   android:label="@string/app_name" />
         <!-- For test only 测试高级功能 -->
-        <activity android:name="com.zhiyijiankang.cloudclinck.lib_push.PushSetActivity" android:label="@string/app_name"></activity>
+        <activity android:name="com.zhiyijiankang.cloudclinck.lib_push.PushSetActivity" android:label="@string/app_name"/>
         <!-- For test only 测试设置 -->
-        <activity android:name="com.zhiyijiankang.cloudclinck.lib_push.SettingActivity" android:label="@string/app_name"></activity>
+        <activity android:name="com.zhiyijiankang.cloudclinck.lib_push.SettingActivity" android:label="@string/app_name"/>
         <!-- For test only 测试状态通知栏，需要打开的Activity -->
         <activity android:name="com.zhiyijiankang.cloudclinck.lib_push.TestActivity" android:exported="false">
             <intent-filter>
@@ -35,7 +59,7 @@
             <intent-filter>
                 <action android:name="cn.jpush.android.ui.PushActivity" />
                 <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="org.micmource.widgetlists.widgetlist" />
+                <category android:name="org.micmource.appdemo" />
             </intent-filter>
         </activity>
         <!-- Required  SDK核心功能-->
@@ -68,7 +92,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="cn.jpush.android.intent.DaemonService" />
-                <category android:name="org.micmource.widgetlists.widgetlist" />
+                <category android:name="org.micmource.appdemo" />
             </intent-filter>
 
         </service>
@@ -80,7 +104,7 @@
             android:exported="false">
             <intent-filter android:priority="1000">
                 <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
-                <category android:name="org.micmource.widgetlists.widgetlist" />
+                <category android:name="org.micmource.appdemo" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.USER_PRESENT" />
@@ -110,14 +134,14 @@
                 <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
                 <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!--Optional 用户接受Rich Push Javascript 回调函数的intent-->
                 <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
-                <category android:name="org.micmource.widgetlists.widgetlist" />
+                <category android:name="org.micmource.appdemo" />
             </intent-filter>
         </receiver>
 
 
         <!-- Required  . Enable it you can get statistics data with channel -->
         <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
-        <meta-data android:name="JPUSH_APPKEY" android:value="aa1865a79d01fd8c3eeb85e9" /> <!--  </>值来自开发者平台取得的AppKey-->
+        <meta-data android:name="JPUSH_APPKEY" android:value="1be438902b8d43d0171b928d" /> <!--  </>值来自开发者平台取得的AppKey-->
     </application>
 
 </manifest>
