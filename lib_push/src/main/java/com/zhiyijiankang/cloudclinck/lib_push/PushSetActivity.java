@@ -93,8 +93,8 @@ public class PushSetActivity extends InstrumentedActivity implements OnClickList
 		}
 		
 		//调用JPush API设置Tag
-		mHandler.sendMessage(mHandler.obtainMessage(MSG_SET_TAGS, tagSet));
-
+//		mHandler.sendMessage(mHandler.obtainMessage(MSG_SET_TAGS, tagSet));
+		JPushInterface.setAliasAndTags(getApplicationContext(), null, tagSet, mTagsCallback);
 	} 
 	
 	private void setAlias(){

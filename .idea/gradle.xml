@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/android7" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/appbutterknife" />
             <option value="$PROJECT_DIR$/appdagger2" />
             <option value="$PROJECT_DIR$/appmvvm" />
             <option value="$PROJECT_DIR$/disklrucachedemo" />
@@ -26,7 +27,6 @@
             <option value="$PROJECT_DIR$/lib_recycleview" />
             <option value="$PROJECT_DIR$/lib_sqlbrite" />
             <option value="$PROJECT_DIR$/lib_sqldelight" />
-            <option value="$PROJECT_DIR$/library-PullToRefresh_2110" />
             <option value="$PROJECT_DIR$/livebutton" />
             <option value="$PROJECT_DIR$/movieseat" />
             <option value="$PROJECT_DIR$/pointer" />
