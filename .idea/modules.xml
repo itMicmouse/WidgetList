@@ -22,6 +22,7 @@
       <module fileurl="file://$PROJECT_DIR$/lib_recycleview/lib_recycleview.iml" filepath="$PROJECT_DIR$/lib_recycleview/lib_recycleview.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_sqlbrite/lib_sqlbrite.iml" filepath="$PROJECT_DIR$/lib_sqlbrite/lib_sqlbrite.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_sqldelight/lib_sqldelight.iml" filepath="$PROJECT_DIR$/lib_sqldelight/lib_sqldelight.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_v4/lib_v4.iml" filepath="$PROJECT_DIR$/lib_v4/lib_v4.iml" />
       <module fileurl="file://$PROJECT_DIR$/livebutton/livebutton.iml" filepath="$PROJECT_DIR$/livebutton/livebutton.iml" />
       <module fileurl="file://$PROJECT_DIR$/movieseat/movieseat.iml" filepath="$PROJECT_DIR$/movieseat/movieseat.iml" />
       <module fileurl="file://$PROJECT_DIR$/pointer/pointer.iml" filepath="$PROJECT_DIR$/pointer/pointer.iml" />

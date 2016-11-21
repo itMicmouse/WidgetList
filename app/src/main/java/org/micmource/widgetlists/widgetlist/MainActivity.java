@@ -9,6 +9,7 @@ import android.util.DisplayMetrics;
 import android.util.TypedValue;
 
 import com.example.jsandroid.JsFragment;
+import com.example.lib_greendao3.GreendaoFragment;
 import com.example.lib_map.StartActivity;
 import com.example.lib_sqldelight.SqldeLightFragment;
 import com.lib_fragmentdialog.FriendActivity;
@@ -23,6 +24,7 @@ import com.livebutton.LiveButtonFragment;
 
 import org.micmource.lib_animation.AnimationFragment;
 import org.micmource.lib_bluetooth_printer.BluetoothPrinterActivity;
+import org.micmource.lib_v4.DrawerFragment;
 import org.micmource.movieseat.SeatFragment;
 import org.micmource.pointer.TemperatureViewFragment;
 import org.micmource.realmreserve.RealmeFragment;
@@ -120,6 +122,12 @@ public class MainActivity extends ActionBarActivity implements MainFragment.OnLi
                 intent = new Intent(MainActivity.this, com.zhiyijiankang.cloudclinck.lib_push.MainActivity.class);
                 startActivity(intent);
                 return;
+            case 20:
+                fragment = new DrawerFragment();
+                break;
+            case 21:
+                fragment = new GreendaoFragment();
+                break;
         }
         getFragmentManager().beginTransaction()
                 .replace(R.id.content, fragment)

@@ -4,4 +4,5 @@
     <string name="rotate">旋转动画</string>
     <string name="translate">位移动画</string>
     <string name="scale">缩放动画</string>
+    <string name="set">动画集合</string>
 </resources>

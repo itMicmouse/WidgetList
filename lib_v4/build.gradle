@@ -1,12 +1,9 @@
 apply plugin: 'com.android.library'
-apply plugin: 'org.greenrobot.greendao'
-
 
 android {
     def globalConfiguration = rootProject.extensions.getByName("ext")
     compileSdkVersion globalConfiguration.getAt("androidCompileSdkVersion")
     buildToolsVersion globalConfiguration.getAt("androidBuildToolsVersion")
-
 
     defaultConfig {
         minSdkVersion globalConfiguration.getAt("androidMinSdkVersion")
@@ -16,28 +13,18 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 }
 
-greendao {
-    schemaVersion 10
-}
-
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.0.0'
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:24.2.0'
-
-    compile 'org.greenrobot:greendao-generator:3.2.0'
-    compile 'org.greenrobot:greendao:3.2.0'
-
-    compile 'net.zetetic:android-database-sqlcipher:3.5.1'
-
-    androidTestCompile 'junit:junit:4.10'
-    androidTestCompile 'com.android.support.test:runner:0.5'
-    def appDependencies = rootProject.ext.appDependencies
-    compile appDependencies.recyclerView
+    compile 'com.android.support:support-v4:25.0.0'
 }
