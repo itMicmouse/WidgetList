@@ -40,16 +40,15 @@ dependencies {
     compile project(':realmreserve')
     compile project(':jsandroid')
     compile project(':movieseat')
-    compile project(':lib_bluetooth_printer');
-    compile project(':lib_sqldelight');
-    compile project(':pointer');
-    compile project(':lib_animation');
-    compile project(':lib_map');
-
-    compile project(path:':lib_push',configuration:'localRelease');
-
+    compile project(':lib_bluetooth_printer')
+    compile project(':lib_sqldelight')
+    compile project(':pointer')
+    compile project(':lib_animation')
+    compile project(':lib_map')
+    compile project(':lib_v4')
+    compile project(path: ':lib_push', configuration: 'localRelease')
     testCompile 'org.testng:testng:6.9.6'
-
     compile 'com.jakewharton:butterknife:8.4.0'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile project(':lib_greendao3')
 }
