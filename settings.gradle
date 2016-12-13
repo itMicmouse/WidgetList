@@ -1,4 +1,4 @@
-include ':app',
+include ':app', ':lib_greendao3',
         ':appretrofitnorestful',
         ':appdagger2',
         ':lib_dagger2',

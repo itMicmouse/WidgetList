@@ -47,6 +47,7 @@ dependencies {
     compile project(':lib_map')
     compile project(':lib_v4')
     compile project(path: ':lib_push', configuration: 'localRelease')
+    compile project(':lib_greendao3')
     testCompile 'org.testng:testng:6.9.6'
     compile 'com.jakewharton:butterknife:8.4.0'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
