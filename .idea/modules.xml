@@ -8,14 +8,14 @@
       <module fileurl="file://$PROJECT_DIR$/appbutterknife/appbutterknife.iml" filepath="$PROJECT_DIR$/appbutterknife/appbutterknife.iml" />
       <module fileurl="file://$PROJECT_DIR$/appdagger2/appdagger2.iml" filepath="$PROJECT_DIR$/appdagger2/appdagger2.iml" />
       <module fileurl="file://$PROJECT_DIR$/appmvvm/appmvvm.iml" filepath="$PROJECT_DIR$/appmvvm/appmvvm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/disklrucachedemo/disklrucachedemo.iml" filepath="$PROJECT_DIR$/disklrucachedemo/disklrucachedemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appretrofitnorestful/appretrofitnorestful.iml" filepath="$PROJECT_DIR$/appretrofitnorestful/appretrofitnorestful.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apptinker/apptinker.iml" filepath="$PROJECT_DIR$/apptinker/apptinker.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsandroid/jsandroid.iml" filepath="$PROJECT_DIR$/jsandroid/jsandroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_animation/lib_animation.iml" filepath="$PROJECT_DIR$/lib_animation/lib_animation.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_bluetooth_printer/lib_bluetooth_printer.iml" filepath="$PROJECT_DIR$/lib_bluetooth_printer/lib_bluetooth_printer.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_dagger2/lib_dagger2.iml" filepath="$PROJECT_DIR$/lib_dagger2/lib_dagger2.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_drawable/lib_drawable.iml" filepath="$PROJECT_DIR$/lib_drawable/lib_drawable.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_fragmentdialog/lib_fragmentdialog.iml" filepath="$PROJECT_DIR$/lib_fragmentdialog/lib_fragmentdialog.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lib_greendao3/lib_greendao3.iml" filepath="$PROJECT_DIR$/lib_greendao3/lib_greendao3.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_map/lib_map.iml" filepath="$PROJECT_DIR$/lib_map/lib_map.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_protocol/lib_protocol.iml" filepath="$PROJECT_DIR$/lib_protocol/lib_protocol.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_push/lib_push.iml" filepath="$PROJECT_DIR$/lib_push/lib_push.iml" />
@@ -27,7 +27,6 @@
       <module fileurl="file://$PROJECT_DIR$/movieseat/movieseat.iml" filepath="$PROJECT_DIR$/movieseat/movieseat.iml" />
       <module fileurl="file://$PROJECT_DIR$/pointer/pointer.iml" filepath="$PROJECT_DIR$/pointer/pointer.iml" />
       <module fileurl="file://$PROJECT_DIR$/realmreserve/realmreserve.iml" filepath="$PROJECT_DIR$/realmreserve/realmreserve.iml" />
-      <module fileurl="file://$PROJECT_DIR$/retrofitnorestful/retrofitnorestful.iml" filepath="$PROJECT_DIR$/retrofitnorestful/retrofitnorestful.iml" />
       <module fileurl="file://$PROJECT_DIR$/rxjavademo/rxjavademo.iml" filepath="$PROJECT_DIR$/rxjavademo/rxjavademo.iml" />
     </modules>
   </component>

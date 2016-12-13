@@ -10,16 +10,17 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/android7" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/appbutterknife" />
             <option value="$PROJECT_DIR$/appdagger2" />
             <option value="$PROJECT_DIR$/appmvvm" />
-            <option value="$PROJECT_DIR$/disklrucachedemo" />
+            <option value="$PROJECT_DIR$/appretrofitnorestful" />
+            <option value="$PROJECT_DIR$/apptinker" />
             <option value="$PROJECT_DIR$/jsandroid" />
             <option value="$PROJECT_DIR$/lib_animation" />
             <option value="$PROJECT_DIR$/lib_bluetooth_printer" />
             <option value="$PROJECT_DIR$/lib_dagger2" />
             <option value="$PROJECT_DIR$/lib_drawable" />
             <option value="$PROJECT_DIR$/lib_fragmentdialog" />
-            <option value="$PROJECT_DIR$/lib_greendao3" />
             <option value="$PROJECT_DIR$/lib_map" />
             <option value="$PROJECT_DIR$/lib_protocol" />
             <option value="$PROJECT_DIR$/lib_push" />
@@ -31,7 +32,6 @@
             <option value="$PROJECT_DIR$/movieseat" />
             <option value="$PROJECT_DIR$/pointer" />
             <option value="$PROJECT_DIR$/realmreserve" />
-            <option value="$PROJECT_DIR$/retrofitnorestful" />
             <option value="$PROJECT_DIR$/rxjavademo" />
           </set>
         </option>
