@@ -23,6 +23,7 @@
             <option value="$PROJECT_DIR$/lib_fragmentdialog" />
             <option value="$PROJECT_DIR$/lib_greendao3" />
             <option value="$PROJECT_DIR$/lib_map" />
+            <option value="$PROJECT_DIR$/lib_okhttp" />
             <option value="$PROJECT_DIR$/lib_protocol" />
             <option value="$PROJECT_DIR$/lib_push" />
             <option value="$PROJECT_DIR$/lib_recycleview" />
