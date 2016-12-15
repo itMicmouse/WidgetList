@@ -14,30 +14,10 @@ import org.greenrobot.greendao.DaoException;
  */
 @Entity(
 
-        // Flag to make an entity "active": Active entities have update,
-        // delete, and refresh methods.
         active = true,
-
-        // Specifies the name of the table in the database.
-        // By default, the name is based on the entities class name.
-//        nameInDb = "AWESOME_USERS",
-
-        // Define indexes spanning multiple columns here.
         indexes = {
-                @Index(value = "name DESC", unique = true)
-        },
-
-        // Flag if the DAO should create the database table (default is true).
-        // Set this to false, if you have multiple entities mapping to one table,
-        // or the table creation is done outside of greenDAO.
-        createInDb = false,
-
-        // Whether an all properties constructor should be generated.
-        // A no-args constructor is always required.
-        generateConstructors = true,
-
-        // Whether getters and setters for properties should be generated if missing.
-        generateGettersSetters = true
+                @Index(value = "name DESC")
+        }
 )
 public class Name {
     @Id(autoincrement = true)
@@ -49,13 +29,12 @@ public class Name {
     @NotNull
     private int repos;
 
-    @Transient
-    private int tempUsageCount;
     /**
      * Used to resolve relations
      */
     @Generated(hash = 2040040024)
     private transient DaoSession daoSession;
+
     /**
      * Used for active entity operations.
      */
@@ -87,6 +66,14 @@ public class Name {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getRepos() {
+        return this.repos;
+    }
+
+    public void setRepos(int repos) {
+        this.repos = repos;
     }
 
     /**
@@ -125,18 +112,11 @@ public class Name {
         myDao.update(this);
     }
 
-    public int getRepos() {
-        return this.repos;
-    }
-
-    public void setRepos(int repos) {
-        this.repos = repos;
-    }
-
     /** called by internal mechanisms, do not call yourself. */
     @Generated(hash = 937279843)
     public void __setDaoSession(DaoSession daoSession) {
         this.daoSession = daoSession;
         myDao = daoSession != null ? daoSession.getNameDao() : null;
     }
+
 }
