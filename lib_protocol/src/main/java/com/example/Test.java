@@ -14,8 +14,8 @@ import java.lang.reflect.Type;
 
 public class Test {
     public static void main(String[] args) {
-//        getParam();
-//        getContent();
+        getParam();
+        getContent();
         getContentErrorabc();
     }
     public static void getParam(){
@@ -81,7 +81,7 @@ public class Test {
     public static void getContentErrorabc(){
         String content = "{\n" +
                 "    \"body\": {\n" +
-                "        \"content\": \"错误信息\",\n" +
+                "        \"content\": \"error\",\n" +
                 "        \"param\": {\n" +
                 "            \"mac\": \"787ec78f7abe5b94\",\n" +
                 "            \"passWord\": \"d8578edf8458ce06fbc5bb76a58c5ca4\",\n" +

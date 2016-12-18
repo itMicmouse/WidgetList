@@ -6,17 +6,22 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.TranslateAnimation;
+import android.widget.Button;
 import android.widget.SeekBar;
+
+import com.nineoldandroids.view.ViewHelper;
 
 /**
  * Created by yakun on 2016/6/20.
  */
 public class DrawerFragment extends Fragment {
-    public DrawerLayout id_drawerlayout;
+    public DrawerLayout mDrawerLayout;
+    public Button OpenRightMenu;
 
     public DrawerFragment() {
     }
@@ -32,44 +37,79 @@ public class DrawerFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        this.id_drawerlayout = (DrawerLayout) view.findViewById(R.id.id_drawerlayout);
-        id_drawerlayout.addDrawerListener(new DrawerLayout.DrawerListener() {
-            /**
-             * 当抽屉滑动状态改变的时候被调用
-             * 状态值是STATE_IDLE（闲置--0）, STATE_DRAGGING（拖拽的--1）, STATE_SETTLING（固定--2）中之一。
-             * 抽屉打开的时候，点击抽屉，drawer的状态就会变成STATE_DRAGGING，然后变成STATE_IDLE
-             */
+
+        initView(view);
+        initEvents();
+    }
+
+    public void OpenRightMenu() {
+        mDrawerLayout.openDrawer(Gravity.RIGHT);
+        mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED,
+                Gravity.RIGHT);
+    }
+
+    private void initEvents() {
+        mDrawerLayout.setDrawerListener(new DrawerLayout.DrawerListener() {
             @Override
-            public void onDrawerStateChanged(int arg0) {
-                Log.i("drawer", "drawer的状态：" + arg0);
+            public void onDrawerStateChanged(int newState) {
             }
-            /**
-             * 当抽屉被滑动的时候调用此方法
-             * arg1 表示 滑动的幅度（0-1）
-             */
+
             @Override
-            public void onDrawerSlide(View arg0, float arg1) {
-                Log.i("drawer", arg1 + "");
-                View mContent = id_drawerlayout.getChildAt(0);
-                float scale = 1 - arg1;
-                TranslateAnimation ta = new TranslateAnimation(0,200,0,0);
-                ta.setDuration(300);
-                mContent.startAnimation(ta);
-                mContent.invalidate();
+            public void onDrawerSlide(View drawerView, float slideOffset) {
+                View mContent = mDrawerLayout.getChildAt(0);
+                View mMenu = drawerView;
+                float scale = 1 - slideOffset;
+                float rightScale = 0.8f + scale * 0.2f;
+
+                if (drawerView.getTag().equals("LEFT")) {
+
+                    float leftScale = 1 - 0.3f * scale;
+
+                    ViewHelper.setScaleX(mMenu, leftScale);
+                    ViewHelper.setScaleY(mMenu, leftScale);
+                    ViewHelper.setAlpha(mMenu, 0.6f + 0.4f * (1 - scale));
+                    ViewHelper.setTranslationX(mContent,
+                            mMenu.getMeasuredWidth() * (1 - scale));
+                    ViewHelper.setPivotX(mContent, 0);
+                    ViewHelper.setPivotY(mContent,
+                            mContent.getMeasuredHeight() / 2);
+                    mContent.invalidate();
+                    ViewHelper.setScaleX(mContent, rightScale);
+                    ViewHelper.setScaleY(mContent, rightScale);
+                } else {
+                    ViewHelper.setTranslationX(mContent,
+                            -mMenu.getMeasuredWidth() * slideOffset);
+                    ViewHelper.setPivotX(mContent, mContent.getMeasuredWidth());
+                    ViewHelper.setPivotY(mContent,
+                            mContent.getMeasuredHeight() / 2);
+                    mContent.invalidate();
+                    ViewHelper.setScaleX(mContent, rightScale);
+                    ViewHelper.setScaleY(mContent, rightScale);
+                }
+
             }
-            /**
-             * 当一个抽屉被完全打开的时候被调用
-             */
+
             @Override
-            public void onDrawerOpened(View arg0) {
-                Log.i("drawer", "抽屉被完全打开了！");
+            public void onDrawerOpened(View drawerView) {
             }
-            /**
-             * 当一个抽屉完全关闭的时候调用此方法
-             */
+
             @Override
-            public void onDrawerClosed(View arg0) {
-                Log.i("drawer", "抽屉被完全关闭了！");
+            public void onDrawerClosed(View drawerView) {
+                mDrawerLayout.setDrawerLockMode(
+                        DrawerLayout.LOCK_MODE_LOCKED_CLOSED, Gravity.RIGHT);
+            }
+        });
+    }
+
+    private void initView(View view) {
+        mDrawerLayout = (DrawerLayout) view.findViewById(R.id.id_drawerLayout);
+        OpenRightMenu = (Button) view.findViewById(R.id.OpenRightMenu);
+        mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED,
+                Gravity.RIGHT);
+        OpenRightMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                OpenRightMenu();
             }
         });
     }
