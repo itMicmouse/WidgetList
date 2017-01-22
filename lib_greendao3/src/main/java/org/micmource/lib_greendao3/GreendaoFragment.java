@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.SeekBar;
 
 import org.greenrobot.greendao.Property;
 import org.greenrobot.greendao.rx.RxQuery;
@@ -41,14 +42,15 @@ public class GreendaoFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        DaoSession daoSession = GreendaoApplication.getDaoSession();
+        final NameDao nameDao = daoSession.getNameDao();
         view.findViewById(R.id.insertone).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Name name = new Name();
                 name.setName("yakun");
                 name.setRepos(222);
-                DbUtil.getDriverDaorx().insert(name)
-                        .observeOn(AndroidSchedulers.mainThread());
+                nameDao.insert(name);
             }
         });
         rxNameilst = DbUtil.getDriverDaorx().getDao().queryBuilder().orderAsc(NameDao.Properties.Name).rx();

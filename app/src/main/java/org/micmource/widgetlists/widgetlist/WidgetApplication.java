@@ -10,6 +10,7 @@ import org.micmource.lib_greendao3.dbhelper.GreendaoApplication;
  * Created by yakun on 2016/10/21.
  */
 
+
 public class WidgetApplication extends Application {
     @Override
     public void onCreate() {
