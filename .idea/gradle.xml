@@ -21,6 +21,7 @@
             <option value="$PROJECT_DIR$/lib_drawable" />
             <option value="$PROJECT_DIR$/lib_fragmentdialog" />
             <option value="$PROJECT_DIR$/lib_greendao3" />
+            <option value="$PROJECT_DIR$/lib_gson" />
             <option value="$PROJECT_DIR$/lib_map" />
             <option value="$PROJECT_DIR$/lib_okhttp" />
             <option value="$PROJECT_DIR$/lib_protocol" />

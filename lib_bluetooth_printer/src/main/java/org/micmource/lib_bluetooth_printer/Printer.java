@@ -69,38 +69,9 @@ public class Printer extends Thread {
         }
     }
 
-    //向 Server 写入数据
-    public void write(byte[] bytes) {
-        try {
-            mmOutStream.write(bytes);
-        } catch (IOException e) { }
-    }
-
-    public void cancel() {
-        try {
-            mmSocket.close();
-        } catch (IOException e) { }
-    }
-
     public void initPrinter() throws IOException {
         writer.write(0x1B);
         writer.write(0x40);
-        writer.flush();
-    }
-    public void printText(String text) throws IOException {
-        writer.write(text);
-        writer.flush();
-    }
-
-    /**
-     * 设置文本对齐方式
-     * @param align 打印位置  0：居左(默认) 1：居中 2：居右
-     * @throws IOException
-     */
-    public void setAlignPosition(int align) throws IOException {
-        writer.write(0x1B);
-        writer.write(0x61);
-        writer.write(align);
         writer.flush();
     }
 }
