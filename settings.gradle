@@ -1,4 +1,4 @@
-include ':app', ':lib_greendao3', ':lib_okhttp', ':lib_gson',
+include ':app', ':lib_greendao3', ':lib_okhttp', ':lib_gson', ':aopdemo',
         ':appretrofitnorestful',
         ':appdagger2',
         ':lib_dagger2',
