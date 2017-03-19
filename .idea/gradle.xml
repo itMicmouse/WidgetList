@@ -11,10 +11,12 @@
             <option value="$PROJECT_DIR$/android7" />
             <option value="$PROJECT_DIR$/aopdemo" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/app_format" />
             <option value="$PROJECT_DIR$/appdagger2" />
             <option value="$PROJECT_DIR$/appmvvm" />
             <option value="$PROJECT_DIR$/appretrofitnorestful" />
             <option value="$PROJECT_DIR$/apptinker" />
+            <option value="$PROJECT_DIR$/appusb" />
             <option value="$PROJECT_DIR$/jsandroid" />
             <option value="$PROJECT_DIR$/lib_animation" />
             <option value="$PROJECT_DIR$/lib_bluetooth_printer" />

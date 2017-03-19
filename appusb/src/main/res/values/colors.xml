@@ -3,6 +3,13 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+    <color name="trans">#00000000</color>
+    <!-- 白色字体 -->
+    <color name="white">#ffffff</color>
+    <!-- 灰色2 -->
+    <color name="color_gray2">#b2b2b2</color>
+    <color name="main_left_background">#51B0C9</color>
     <color name="dialog_black">#626262</color>
-    <color name="shape_prescription_item_color">#D3D3D3</color>
 </resources>
