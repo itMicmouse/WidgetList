@@ -44,24 +44,42 @@ import java.util.Set;
  */
 public class BluetoothPrint4DialogFragment extends DialogFragment {
 
+    /**
+     * 蓝牙列表
+     */
     private ListView mFoundDevicesListView;
+    /**
+     * 列表适配器
+     */
     private ArrayAdapter<String> deviceArrayAdapter;
+    /**
+     * 搜索按钮
+     */
     private Button button_scan;
+    /**
+     * 关闭按钮
+     */
     private TextView tv_cancle;
-    private List<UsbDevice> deviceList;
-    private static final String ACTION_USB_PERMISSION = "com.android.usb.USB_PERMISSION";
+    /**
+     * 查找中
+     */
     private ProgressBar pb_search;
-
+    /**
+     * 蓝牙适配器
+     */
     private BluetoothAdapter mBtAdapter;
-
+    /**
+     * 蓝牙列表
+     */
     private Set<BluetoothDevice> pairedDevices;
 
     private BluetoothPrint4DialogFragment.OnClickListenerMiss listener;
+
     public interface OnClickListenerMiss {
         void setCancle();
     }
 
-    public static BluetoothPrint4DialogFragment newInstance( BluetoothPrint4DialogFragment.OnClickListenerMiss listener) {
+    public static BluetoothPrint4DialogFragment newInstance(BluetoothPrint4DialogFragment.OnClickListenerMiss listener) {
         BluetoothPrint4DialogFragment doctorAdviceDialogFragment = new BluetoothPrint4DialogFragment();
         doctorAdviceDialogFragment.listener = listener;
         return doctorAdviceDialogFragment;
@@ -71,7 +89,7 @@ public class BluetoothPrint4DialogFragment extends DialogFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        int style=DialogFragment.STYLE_NO_TITLE;
+        int style = DialogFragment.STYLE_NO_TITLE;
         setStyle(style, 0);
     }
 
@@ -81,6 +99,7 @@ public class BluetoothPrint4DialogFragment extends DialogFragment {
         setCancelable(true);
         findView(view);
         setListener();
+        super.onResume();
         return view;
     }
 
@@ -88,11 +107,10 @@ public class BluetoothPrint4DialogFragment extends DialogFragment {
         mFoundDevicesListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                mUSBDevice = deviceList.get(position);
-                returnToPreviousActivity(deviceList.get(position));
+
             }
         });
-        deviceArrayAdapter = new ArrayAdapter<String>(getActivity(), R.layout.device_item);
+        deviceArrayAdapter = new ArrayAdapter<>(getActivity(), R.layout.device_item);
         mFoundDevicesListView.setAdapter(deviceArrayAdapter);
         button_scan.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -119,19 +137,13 @@ public class BluetoothPrint4DialogFragment extends DialogFragment {
         }
 
     }
-    private void returnToPreviousActivity(UsbDevice mUSBDevice) {
-        myPrinter = PrinterInstance.getPrinterInstance(getActivity(),mUSBDevice,mHandler);
-        UsbManager mUsbManager = (UsbManager) getActivity().getSystemService(Context.USB_SERVICE);
-        if (mUsbManager.hasPermission(mUSBDevice)) {
-            myPrinter.openConnection();
-        } else {
-            // 没有权限询问用户是否授予权限
-            PendingIntent pendingIntent = PendingIntent.getBroadcast(getActivity(), 0,new Intent(ACTION_USB_PERMISSION), 0);
-            IntentFilter filter = new IntentFilter(ACTION_USB_PERMISSION);
-            filter.addAction(UsbManager.ACTION_USB_DEVICE_ATTACHED);
-            filter.addAction(UsbManager.ACTION_USB_DEVICE_DETACHED);
-            getActivity().registerReceiver(mUsbReceiver, filter);
-            mUsbManager.requestPermission(mUSBDevice, pendingIntent); // 该代码执行后，系统弹出一个对话框
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (mBtAdapter.isDiscovering()) {
+            mBtAdapter.cancelDiscovery();
+            getActivity().unregisterReceiver(mReceiver);
         }
     }
 
@@ -142,7 +154,6 @@ public class BluetoothPrint4DialogFragment extends DialogFragment {
             switch (msg.what) {
                 case PrinterConstants.Connect.SUCCESS:
                     System.out.println("SUCCESS");
-                    BaseApplication.getApplication().setPrinterInstance(myPrinter);
                     listener.setCancle();
                     dismiss();
                     break;
@@ -164,35 +175,11 @@ public class BluetoothPrint4DialogFragment extends DialogFragment {
         }
     };
 
-    private final BroadcastReceiver mUsbReceiver = new BroadcastReceiver() {
-        @SuppressLint("NewApi")
-        public void onReceive(Context context, Intent intent) {
-            String action = intent.getAction();
-
-            if (ACTION_USB_PERMISSION.equals(action)) {
-                synchronized (this) {
-                    getActivity().unregisterReceiver(mUsbReceiver);
-                    UsbDevice device = intent.getParcelableExtra(UsbManager.EXTRA_DEVICE);
-                    if (intent.getBooleanExtra(UsbManager.EXTRA_PERMISSION_GRANTED, false)&& mUSBDevice.equals(device)) {
-                        myPrinter.openConnection();
-                    } else {
-                        mHandler.obtainMessage(PrinterConstants.Connect.FAILED).sendToTarget();
-                    }
-                }
-            }
-        }
-    };
-
-    private PrinterInstance myPrinter;
-    private UsbDevice mUSBDevice;
-
     private void doDiscovery() {
-        // Indicate scanning in the title
         pb_search.setVisibility(View.VISIBLE);
-
-        // If we're already discovering, stop it
         if (mBtAdapter.isDiscovering()) {
             mBtAdapter.cancelDiscovery();
+            getActivity().unregisterReceiver(mReceiver);
         }
         // Request discover from BluetoothAdapter
         mBtAdapter.startDiscovery();
@@ -205,10 +192,39 @@ public class BluetoothPrint4DialogFragment extends DialogFragment {
         pb_search = (ProgressBar) view.findViewById(R.id.pb_search);
     }
 
+    private BroadcastReceiver mReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            String action = intent.getAction();
 
+            if (BluetoothDevice.ACTION_FOUND.equals(action)) {
+                BluetoothDevice device = intent
+                        .getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
 
+                String itemName = device.getName()
+                        + " ( "
+                        + getResources()
+                        .getText(
+                                device.getBondState() == BluetoothDevice.BOND_BONDED ? R.string.has_paired
+                                        : R.string.not_paired) + " )"
+                        + "\n" + device.getAddress();
 
-
+                deviceArrayAdapter.remove(itemName);
+                deviceArrayAdapter.add(itemName);
+                mFoundDevicesListView.setEnabled(true);
+            } else if (BluetoothAdapter.ACTION_DISCOVERY_FINISHED
+                    .equals(action)) {
+                pb_search.setVisibility(View.INVISIBLE);
+                if (deviceArrayAdapter.getCount() == 0) {
+                    String noDevices = getResources().getText(
+                            R.string.none_found).toString();
+                    deviceArrayAdapter.add(noDevices);
+                    mFoundDevicesListView.setEnabled(false);
+                }
+                button_scan.setEnabled(true);
+            }
+        }
+    };
 
 
     @Override
@@ -219,9 +235,19 @@ public class BluetoothPrint4DialogFragment extends DialogFragment {
 
         int screen_w = wm.getDefaultDisplay().getWidth();
         int screen_h = wm.getDefaultDisplay().getHeight();
-        int max = Math.max(screen_h,screen_w);
+        int max = Math.max(screen_h, screen_w);
         getDialog().getWindow().setLayout((int) (max * 4 / 10), ViewGroup.LayoutParams.WRAP_CONTENT);
         applyCompat();
+
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        IntentFilter filter = new IntentFilter();
+        filter.addAction(BluetoothDevice.ACTION_FOUND);
+        filter.addAction(BluetoothAdapter.ACTION_DISCOVERY_FINISHED);
+        getActivity().registerReceiver(mReceiver, filter);
     }
 
     private void applyCompat() {

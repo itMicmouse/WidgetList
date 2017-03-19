@@ -37,7 +37,6 @@ dependencies {
     compile project(':lib_recycleview')
     compile project(path: ':lib_fragmentdialog')
     compile project(':livebutton')
-    compile project(':realmreserve')
     compile project(':jsandroid')
     compile project(':movieseat')
     compile project(':lib_bluetooth_printer')
