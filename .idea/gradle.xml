@@ -12,7 +12,7 @@
             <option value="$PROJECT_DIR$/android7" />
             <option value="$PROJECT_DIR$/aopdemo" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/app_format" />
+            <option value="$PROJECT_DIR$/app_tool" />
             <option value="$PROJECT_DIR$/appdagger2" />
             <option value="$PROJECT_DIR$/appmvvm" />
             <option value="$PROJECT_DIR$/appretrofitnorestful" />
@@ -37,7 +37,6 @@
             <option value="$PROJECT_DIR$/livebutton" />
             <option value="$PROJECT_DIR$/movieseat" />
             <option value="$PROJECT_DIR$/pointer" />
-            <option value="$PROJECT_DIR$/realmreserve" />
             <option value="$PROJECT_DIR$/rxjavademo" />
           </set>
         </option>

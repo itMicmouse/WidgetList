@@ -6,7 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/android7/android7.iml" filepath="$PROJECT_DIR$/android7/android7.iml" />
       <module fileurl="file://$PROJECT_DIR$/aopdemo/aopdemo.iml" filepath="$PROJECT_DIR$/aopdemo/aopdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app_format/app_format.iml" filepath="$PROJECT_DIR$/app_format/app_format.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app_tool/app_tool.iml" filepath="$PROJECT_DIR$/app_tool/app_tool.iml" />
       <module fileurl="file://$PROJECT_DIR$/appdagger2/appdagger2.iml" filepath="$PROJECT_DIR$/appdagger2/appdagger2.iml" />
       <module fileurl="file://$PROJECT_DIR$/appmvvm/appmvvm.iml" filepath="$PROJECT_DIR$/appmvvm/appmvvm.iml" />
       <module fileurl="file://$PROJECT_DIR$/appretrofitnorestful/appretrofitnorestful.iml" filepath="$PROJECT_DIR$/appretrofitnorestful/appretrofitnorestful.iml" />
@@ -31,7 +31,6 @@
       <module fileurl="file://$PROJECT_DIR$/livebutton/livebutton.iml" filepath="$PROJECT_DIR$/livebutton/livebutton.iml" />
       <module fileurl="file://$PROJECT_DIR$/movieseat/movieseat.iml" filepath="$PROJECT_DIR$/movieseat/movieseat.iml" />
       <module fileurl="file://$PROJECT_DIR$/pointer/pointer.iml" filepath="$PROJECT_DIR$/pointer/pointer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/realmreserve/realmreserve.iml" filepath="$PROJECT_DIR$/realmreserve/realmreserve.iml" />
       <module fileurl="file://$PROJECT_DIR$/rxjavademo/rxjavademo.iml" filepath="$PROJECT_DIR$/rxjavademo/rxjavademo.iml" />
     </modules>
   </component>

@@ -28,7 +28,6 @@ import org.micmource.lib_greendao3.GreendaoFragment;
 import org.micmource.lib_v4.DrawerFragment;
 import org.micmource.movieseat.SeatFragment;
 import org.micmource.pointer.TemperatureViewFragment;
-import org.micmource.realmreserve.RealmeFragment;
 import org.micmource.widgetlists.widgetlist.DevInfo.DevInfoActivity;
 import org.micmource.widgetlists.widgetlist.tag.DoorActivity;
 
@@ -94,7 +93,7 @@ public class MainActivity extends ActionBarActivity implements MainFragment.OnLi
                 fragment = new MineFragment();
                 break;
             case 11:
-                fragment = new RealmeFragment();
+                fragment = new MineFragment();
                 break;
             case 12:
                 fragment = new JsFragment();

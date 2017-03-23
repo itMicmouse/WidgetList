@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.printer.sdk.PrinterInstance;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     private Button btn_select_print,btn_select_print_blu;
 
