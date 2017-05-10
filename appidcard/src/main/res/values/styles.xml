@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Light">
+    </style>
+
+    <!-- 横向水平的线 灰线 -->
+    <style name="line_view_stylee_horizontal_fill_gray">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/color_gray2</item>
+    </style>
+
+    <!-- 文字在线性布局中的显示样式(黑色) -->
+    <style name="text_show_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/dialog_black</item>
+        <item name="android:padding">@dimen/dimens_3_160</item>
+        <item name="android:textSize">@dimen/text_size_14_5</item>
+    </style>
+
+</resources>

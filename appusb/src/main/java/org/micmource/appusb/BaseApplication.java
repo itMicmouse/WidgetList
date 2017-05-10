@@ -2,7 +2,7 @@ package org.micmource.appusb;
 
 import android.app.Application;
 
-import com.printer.sdk.PrinterInstance;
+import com.android.print.sdk.PrinterInstance;
 
 
 /**
@@ -26,8 +26,8 @@ public class BaseApplication  extends Application{
 
     public PrinterInstance getPrinterInstance() {
         if(printerInstance!=null) {
-            printerInstance.setLeftMargin(40);
-            printerInstance.sendBytesData(new byte[]{29, 87, 20, 3});
+            printerInstance.setLeftMargin(40,0);
+            printerInstance.sendByteData(new byte[]{29, 87, 20, 3});
         }
         return printerInstance;
     }

@@ -25,8 +25,8 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.printer.sdk.PrinterConstants;
-import com.printer.sdk.PrinterInstance;
+import com.android.print.sdk.PrinterConstants;
+import com.android.print.sdk.PrinterInstance;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -66,7 +66,7 @@ public class USBPrint4DialogFragment extends DialogFragment {
 
     @Override
     public View onCreateView(final LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.doctor_advice2_prescrible_dialogfragment, null);
+        View view = inflater.inflate(R.layout.usb_devicelist_dialogfragment, null);
         setCancelable(true);
         findView(view);
         setListener();
@@ -98,7 +98,7 @@ public class USBPrint4DialogFragment extends DialogFragment {
 
     }
     private void returnToPreviousActivity(UsbDevice mUSBDevice) {
-        myPrinter = PrinterInstance.getPrinterInstance(getActivity(),mUSBDevice,mHandler);
+        myPrinter = new PrinterInstance(getActivity(),mUSBDevice,mHandler);
         UsbManager mUsbManager = (UsbManager) getActivity().getSystemService(Context.USB_SERVICE);
         if (mUsbManager.hasPermission(mUSBDevice)) {
             myPrinter.openConnection();

@@ -3,6 +3,8 @@ apply plugin: 'java'
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile files('libs/jpedal_lgpl.jar')
+    compile files('libs/zxing.jar')
+    compile files('libs/zxing-3.2.1.jar')
 }
 
 sourceCompatibility = "1.7"

@@ -1,9 +1,6 @@
 package org.micmource.appusb;
 
-import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.app.DialogFragment;
-import android.app.PendingIntent;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.content.BroadcastReceiver;
@@ -12,13 +9,10 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.hardware.usb.UsbDevice;
-import android.hardware.usb.UsbManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,12 +24,9 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.printer.sdk.PrinterConstants;
-import com.printer.sdk.PrinterInstance;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import com.android.print.sdk.PrinterConstants;
+
 import java.util.Set;
 
 /**
@@ -95,7 +86,7 @@ public class BluetoothPrint4DialogFragment extends DialogFragment {
 
     @Override
     public View onCreateView(final LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.doctor_advice2_prescrible_dialogfragment, null);
+        View view = inflater.inflate(R.layout.usb_devicelist_dialogfragment, null);
         setCancelable(true);
         findView(view);
         setListener();

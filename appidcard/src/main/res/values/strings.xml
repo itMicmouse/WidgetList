@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">appidcard</string>
+
+
+    <string name="scannewdevice">扫描新设备</string>
+    <string name="has_paired">已配对</string>
+    <string name="not_paired">未配对</string>
+    <string name="none_found">搜索不到设备</string>
+</resources>

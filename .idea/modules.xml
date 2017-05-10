@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app_tool/app_tool.iml" filepath="$PROJECT_DIR$/app_tool/app_tool.iml" />
       <module fileurl="file://$PROJECT_DIR$/appdagger2/appdagger2.iml" filepath="$PROJECT_DIR$/appdagger2/appdagger2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appidcard/appidcard.iml" filepath="$PROJECT_DIR$/appidcard/appidcard.iml" />
       <module fileurl="file://$PROJECT_DIR$/appmvvm/appmvvm.iml" filepath="$PROJECT_DIR$/appmvvm/appmvvm.iml" />
       <module fileurl="file://$PROJECT_DIR$/appretrofitnorestful/appretrofitnorestful.iml" filepath="$PROJECT_DIR$/appretrofitnorestful/appretrofitnorestful.iml" />
       <module fileurl="file://$PROJECT_DIR$/apptinker/apptinker.iml" filepath="$PROJECT_DIR$/apptinker/apptinker.iml" />
