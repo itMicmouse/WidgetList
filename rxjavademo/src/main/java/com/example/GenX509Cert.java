@@ -11,6 +11,9 @@ public class GenX509Cert {
 //        new GenX509Cert().genkey();
 
         new GenX509Cert().export();
+
+        //keytool -printcert -rfc -file srca.cer
+        //提取证书
     }
 
     public void execCommand(String[] arstringCommand) {
