@@ -35,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
 
         et_age_calculate_year = (EditText) findViewById(R.id.et_age_calculate_year);
 
+        String yangyakun = Rsa.encryptByPublic("这是一段将要使用'秘钥字符串'进行加密的字符串!");
+        System.out.println("加密后:"+yangyakun);
+
 
         tv_have = (TextView) findViewById(R.id.tv_have);
         tv_have_info = (TextView) findViewById(R.id.tv_have_info);

@@ -40,4 +40,14 @@
         android:inputType="number"
         android:minWidth="85dp"
         android:text="0"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_age_calculate_year"
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@+id/tv_have"
+        android:layout_toRightOf="@+id/tv_have" />
 </RelativeLayout>
